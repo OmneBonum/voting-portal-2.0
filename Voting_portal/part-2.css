@@ -1,0 +1,25 @@
+.part-2 {
+    text-align: center;
+}
+
+
+footer.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.nav-item {
+    display: inline-flex;
+}
+
+
+ul.nav-item li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.container .jumbotron .section_first {
+    padding-bottom: 10px;
+    position: relative;
+    top: 80px;
+}

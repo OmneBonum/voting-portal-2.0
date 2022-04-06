@@ -1,0 +1,238 @@
+{%include "app/foot.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pod View</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+ <style>
+ 
+ 
+
+
+
+ /*7-feb-2022 css start */
+ 
+ 
+ a#logo {
+   float: left;
+   margin-right: 10px;
+   font-size: 1.7em;
+   color: #fff;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   padding-top: 9px;
+   font-weight: bold;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ ul#bs-example-navbar-collapse-1 a {
+   font-size: 20px;
+   font-weight: 600;
+   font-family: sans-serif;
+ }
+ ul.nav-item {
+     display: inline-flex;
+ }
+ 
+ ul.nav-item li a {
+   color: #555555;
+   font-size: 16px;
+ }
+ ul.nav-item li {
+     list-style: none;
+     margin-left: 15px;
+ }
+  
+ 
+ ul#bs-example-navbar-collapse-1 {
+   color: white;
+   font-size: 22px;
+ }
+ .container.header_container {
+   display: block !important;
+ }
+ 
+ 
+ ul#bs-example-navbar-collapse-1 {
+   color: white;
+   font-size: 22px;
+ }
+ 
+ .container.section_container {
+   max-width: 1200px;
+ }
+ 
+ h2.text-center.Pod_number {
+   font-size: 32px;
+ }
+
+
+.Pod_section p {
+  font-size: 18px !important;
+  color: #001687 !important;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  font-size: 16px !important;
+}
+.Pod_section p {
+  font-size: 18px !important;
+  color: #ff0000 !important;
+  font-weight: 600 !important;
+}
+
+ .btn.vote {
+  border: 1px solid #0050a6;
+  background: #0069d9;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+
+.delete {
+  background: #0069d9;
+  border: 2px solid #0069d9;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px 7px;
+}
+.as {
+  color: #e7340b;
+}
+
+
+.asa {
+  color: #1b4ec1;
+}
+ 
+ /*7-feb-2022 css end */
+ 
+ 
+  </style> 
+
+
+  
+  
+</head>
+<body>
+	
+  
+
+
+
+<form class="form-horizontal form-label-left" method="POST" novalidate>
+        {% csrf_token %}
+
+<div class="Pod_section">
+ 
+<h2 class="text-center Pod_number"> Housekeeping Page</h2>
+         
+<div class="container section_container">
+  <h1><center>Pod: {{key1.id}} &nbsp District: {{obj|upper}}</center></h1>
+  <h2 class="text-center Pod_number">First Delegate:{% for item in all%}
+    {{item.group_owner.name}}
+    
+    <h1 class="as"><center>Votes_count: {{count_obj}}</center></h1>
+    <h1 class="asa"><center>Elect_count: {{elect_obj}}</center></h1>
+    {%endfor%}
+    {%if owner_id == request.user.id%}
+    <p class="text-center">Pod Invitation Key is:{% for item in user %}
+      {{item.group_key}}
+      {%endfor%}
+      {%endif%}  
+	
+			
+			 <button type="button" class="close" aria-label="Close">
+			<span aria-hidden="true"></span>
+		</button></p>
+	
+	</div>
+	<div class="btn_section text-center mb-5">
+    {% comment %}  {% if podlen == 0 %}
+    <button id="send" type="submit" name="hello" class="btn btn-success">Generate Key</a></button> {% endcomment %}
+    {% if  owner_id == request.user.id%}
+      <button id="send" type="submit" name="hello" class="btn btn-success">Update Key</a></button>
+      <a class="btn btn-success" href="/member">Members</a>
+    {%elif is_key_generate == 1%}
+      <button id="send" type="submit" name="hello" class="btn btn-success">generate Key</a></button> 
+    {% endif  %}  
+	</div>
+	
+  <table class="table table-bordered table-sm">
+		<thead>
+		  <tr>
+	<th>Id</th>
+	<th>Name </th>
+	<th>Email</th>
+    <th>District </th>
+    <th>Votes</th> 
+    <th>Devote</th>
+    <th>Election</th>   
+    <th>delete</th>                     
+	</tr>
+		</thead>
+   
+		<tbody>     
+			{% for users_list in stat%}    
+      
+    <tr>  
+      {%if forloop.counter < 10%}
+      <td>{{0}}{{forloop.counter}}
+       {%endif%}
+      
+      <td>{{users_list.member.name }}</td>  
+      <td>{{users_list.member.email }}</td>  
+      <td>{{users_list.member.district }}</td>  
+
+         
+        <td>
+          {% if  votegive == 0 and users_list.member_status == 0 %}
+            <button type="submit" class="btn vote" name="submit"  value={{users_list.id}}>vote now</button>
+          {% endif  %}
+        </td>
+
+        <td>
+          {% if  devote == 0 and  users_list.member_status == 0%}
+          <button type="submit" class="btn vote" name="devote"  value={{users_list.id}}>Remove vote</button>
+          {%endif%}
+
+        </td>
+        <td>
+          {% if  podlen >= 5 and users_list.member_status == 1 and evote == 0 %}
+            <button type="submit" name="elect" value={{users_list.id}}>Election</a></button>
+          {% endif  %}
+        </td>
+
+      
+        
+        
+        <td>
+          {% if  users_list.member_status == 0 and owner_id == request.user.id %}
+            <button type="submit" class="" name="Delete" value={{users_list.id}}>Delete</button>  
+          {% endif  %}
+        </td>    
+          
+
+      {%endfor%}
+
+    
+		</tbody>
+	  </table>
+  </form>
+	</div>
+	
+
+</body>
+</html>

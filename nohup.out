@@ -1,0 +1,2255 @@
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+vote.user.voterid: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+
+System check identified 1 issue (0 silenced).
+[14/Jan/2022 11:52:38] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 11:52:38] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 11:52:38] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 11:52:41] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 11:52:41] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 13:18:25] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 13:18:25] "GET /static/style.css HTTP/1.1" 200 2555
+Not Found: /favicon.ico
+[14/Jan/2022 13:18:25] "GET /favicon.ico HTTP/1.1" 404 2990
+[14/Jan/2022 13:18:27] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:18:27] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:18:27] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[14/Jan/2022 13:18:37] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:18:37] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 13:18:49] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 13:18:49] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:19:36] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:19:37] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 13:20:01] "POST /signup/create HTTP/1.1" 302 0
+[14/Jan/2022 13:20:01] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 13:20:01] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:34:34] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:34:34] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:34:34] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 13:34:47] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:34:47] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 13:35:18] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 13:35:18] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:42:59] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:42:59] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:43:00] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 13:43:10] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 13:43:10] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:43:26] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:43:26] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:43:26] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 13:43:29] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:43:29] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:43:29] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 13:43:31] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:43:31] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[14/Jan/2022 13:43:31] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 13:43:34] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:43:34] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:43:34] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 13:43:36] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 13:43:36] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 13:46:37] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:46:38] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[14/Jan/2022 13:46:38] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[14/Jan/2022 13:47:27] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 13:47:27] "GET /static/style.css HTTP/1.1" 200 2555
+[14/Jan/2022 13:47:27] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[14/Jan/2022 13:47:27] "GET /favicon.ico HTTP/1.1" 404 2990
+[14/Jan/2022 15:18:03] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 15:18:03] "GET /static/style.css HTTP/1.1" 200 2555
+[14/Jan/2022 15:18:03] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[14/Jan/2022 15:18:04] "GET /favicon.ico HTTP/1.1" 404 2990
+[14/Jan/2022 15:39:23] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 15:39:24] "GET /static/style.css HTTP/1.1" 200 2555
+[14/Jan/2022 15:39:24] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[14/Jan/2022 15:39:24] "GET /favicon.ico HTTP/1.1" 404 2990
+[14/Jan/2022 15:47:05] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 15:47:05] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 15:47:05] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 15:49:21] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 15:49:22] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[14/Jan/2022 15:49:22] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 15:49:33] "GET /login HTTP/1.1" 200 4596
+[14/Jan/2022 15:49:55] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 15:50:39] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 15:50:39] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 15:50:49] "GET /login HTTP/1.1" 200 4596
+Not Found: /signup/static/style.css
+[14/Jan/2022 15:50:51] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 15:55:44] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 15:55:44] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 15:55:45] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 15:55:57] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 15:55:57] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 16:14:48] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 16:14:51] "GET / HTTP/1.1" 200 3836
+Not Found: /favicon.ico
+[14/Jan/2022 16:14:56] "GET /favicon.ico HTTP/1.1" 404 2990
+[14/Jan/2022 17:06:05] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 17:06:05] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 17:06:05] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 17:06:29] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 17:06:45] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 17:06:45] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[14/Jan/2022 17:06:46] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 17:07:43] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 17:07:45] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 17:09:22] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 17:09:25] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 17:09:25] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[14/Jan/2022 17:23:37] "GET / HTTP/1.1" 200 3836
+[14/Jan/2022 17:23:37] "GET /static/style.css HTTP/1.1" 304 0
+[14/Jan/2022 17:23:37] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[14/Jan/2022 17:23:38] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[14/Jan/2022 17:23:39] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[15/Jan/2022 07:02:57] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[15/Jan/2022 07:02:58] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /favicon.ico
+[15/Jan/2022 07:02:58] "GET /favicon.ico HTTP/1.1" 404 2990
+[15/Jan/2022 09:08:27] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:08:27] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:08:27] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /favicon.ico
+[15/Jan/2022 09:08:27] "GET /favicon.ico HTTP/1.1" 404 2990
+[15/Jan/2022 09:08:30] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 09:08:31] "GET /static/style.css HTTP/1.1" 304 0
+[15/Jan/2022 09:08:31] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[15/Jan/2022 09:09:09] "GET /login HTTP/1.1" 200 4596
+[15/Jan/2022 09:09:16] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 09:09:18] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:09:18] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[15/Jan/2022 09:09:32] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 09:09:34] "GET /login HTTP/1.1" 200 4596
+Not Found: /signup
+[15/Jan/2022 09:09:40] "GET /signup HTTP/1.1" 404 2975
+[15/Jan/2022 09:09:45] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 09:09:48] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:09:48] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /know
+[15/Jan/2022 09:21:59] "GET /know HTTP/1.1" 404 2969
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:22:01] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:22:01] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[15/Jan/2022 09:22:05] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 09:22:52] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:22:52] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Internal Server Error: /signup/create
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Signupview.py", line 25, in create
+    signup.save()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 727, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 765, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 837, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1827, in get_prep_value
+    ) from e
+ValueError: Field 'voterid' expected a number but got ''.
+[15/Jan/2022 09:22:57] "POST /signup/create HTTP/1.1" 500 139185
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:22:58] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[15/Jan/2022 09:23:00] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[15/Jan/2022 09:23:00] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[15/Jan/2022 09:23:02] "GET /login HTTP/1.1" 200 4596
+[15/Jan/2022 12:06:10] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 12:06:11] "GET /static/style.css HTTP/1.1" 304 0
+[15/Jan/2022 12:06:11] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[15/Jan/2022 12:06:11] "GET /favicon.ico HTTP/1.1" 404 2990
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+[15/Jan/2022 12:52:30] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03U3fãK\x9c²VÉÚ\xadE\x91\x8fêÓiÓ^:!¯\rÖ\x1cä¼·\x9d\x80Á\x12 *7ÓøIP<\x99j\x96éÿP\x10ôû~\x0f\x19vU_\x88IoÞ4ð}¹)ä\x00&Ì¨Ì©À/À0À+À,À\x13À\tÀ\x14À')
+[15/Jan/2022 12:52:30] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Invalid HTTP_HOST header: 'fuwu.sogou.com'. You may need to add 'fuwu.sogou.com' to ALLOWED_HOSTS.
+Bad Request: /http:/fuwu.sogou.com/404/index.html
+[15/Jan/2022 12:52:30] "GET http://fuwu.sogou.com/404/index.html HTTP/1.1" 400 67697
+Bad Request: /http:/fuwu.sogou.com/404/index.html
+[15/Jan/2022 12:52:30] "GET http://fuwu.sogou.com/404/index.html HTTP/1.1" 400 67695
+[15/Jan/2022 12:52:37] code 400, message Bad request syntax ('\x05\x01\x00')
+[15/Jan/2022 12:52:37] " " 400 -
+[15/Jan/2022 12:52:37,530] - Broken pipe from ('222.186.19.235', 47308)
+
+[15/Jan/2022 16:27:47] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[15/Jan/2022 16:27:55] "GET / HTTP/1.1" 200 3836
+[15/Jan/2022 16:27:57] "GET /static/style.css HTTP/1.1" 200 2555
+[15/Jan/2022 16:27:57] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[15/Jan/2022 16:27:59] "GET /favicon.ico HTTP/1.1" 404 2990
+[15/Jan/2022 16:29:07] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[15/Jan/2022 16:29:07] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[15/Jan/2022 16:29:07] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /favicon.ico
+[15/Jan/2022 16:29:07] "GET /favicon.ico HTTP/1.1" 404 2990
+[15/Jan/2022 16:29:34] "GET / HTTP/1.1" 200 3836
+Not Found: /favicon.ico
+[15/Jan/2022 16:29:35] "GET /favicon.ico HTTP/1.1" 404 2990
+[16/Jan/2022 12:21:32] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+[16/Jan/2022 12:21:32] "Z¥     " 400 -
+[16/Jan/2022 12:21:32,915] - Broken pipe from ('205.185.122.46', 59218)
+
+[16/Jan/2022 20:28:33] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+[16/Jan/2022 20:28:33] "Z¥     " 400 -
+[17/Jan/2022 03:52:09] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[17/Jan/2022 07:07:17] "GET / HTTP/1.1" 200 3836
+[17/Jan/2022 07:07:17] "GET /static/style.css HTTP/1.1" 304 0
+[17/Jan/2022 07:07:17] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[17/Jan/2022 07:07:17] "GET /favicon.ico HTTP/1.1" 404 2990
+[17/Jan/2022 07:07:31] "GET /login HTTP/1.1" 200 4596
+Not Found: /signup
+[17/Jan/2022 07:07:37] "GET /signup HTTP/1.1" 404 2975
+Not Found: /signup
+[17/Jan/2022 07:07:40] "GET /signup HTTP/1.1" 404 2975
+[17/Jan/2022 07:07:43] "POST /login HTTP/1.1" 200 4596
+[17/Jan/2022 07:07:45] "GET /login HTTP/1.1" 200 4596
+[17/Jan/2022 07:07:46] "GET / HTTP/1.1" 200 3836
+[17/Jan/2022 07:07:48] "GET / HTTP/1.1" 200 3836
+[17/Jan/2022 07:07:49] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[17/Jan/2022 07:07:50] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[17/Jan/2022 07:08:03] "GET / HTTP/1.1" 200 3836
+[17/Jan/2022 07:08:44] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[17/Jan/2022 07:08:44] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[17/Jan/2022 07:08:50] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[17/Jan/2022 07:08:50] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[17/Jan/2022 07:09:05] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[17/Jan/2022 07:09:05] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[17/Jan/2022 07:09:12] "GET /login HTTP/1.1" 200 4596
+[17/Jan/2022 07:09:18] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[17/Jan/2022 07:09:18] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[17/Jan/2022 07:13:28] "GET / HTTP/1.1" 200 3836
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[17/Jan/2022 07:20:02] "GET / HTTP/1.0" 400 66895
+[17/Jan/2022 09:52:08] code 400, message Bad request syntax ('\x01I20100')
+[17/Jan/2022 09:52:08] "I20100" 400 -
+[17/Jan/2022 14:03:12] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[17/Jan/2022 14:43:04] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[17/Jan/2022 14:43:14] "GET / HTTP/1.1" 200 3836
+[17/Jan/2022 14:43:15] "GET /static/style.css HTTP/1.1" 304 0
+[17/Jan/2022 14:43:15] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[17/Jan/2022 17:07:30] "GET / HTTP/1.1" 200 3836
+[17/Jan/2022 23:58:54] "GET / HTTP/1.1" 200 3836
+Not Found: /favicon.ico
+[17/Jan/2022 23:59:15] "GET /favicon.ico HTTP/1.1" 404 2990
+[18/Jan/2022 04:08:00] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[18/Jan/2022 04:48:08] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+[18/Jan/2022 04:48:08] "Z¥     " 400 -
+[18/Jan/2022 05:19:17] code 400, message Bad request syntax ('\x04\x01\x00\x19h/3!\x00')
+[18/Jan/2022 05:19:17] " h/3! " 400 -
+[18/Jan/2022 05:19:17,146] - Broken pipe from ('89.248.165.52', 37770)
+
+[18/Jan/2022 05:20:17] code 400, message Bad request syntax ('\x05\x01\x00')
+[18/Jan/2022 05:20:17] " " 400 -
+[18/Jan/2022 05:20:17,413] - Broken pipe from ('89.248.165.52', 48408)
+
+Invalid HTTP_HOST header: 'hotmail-com.olc.protection.outlook.com:25'. You may need to add 'hotmail-com.olc.protection.outlook.com' to ALLOWED_HOSTS.
+Bad Request: /hotmail-com.olc.protection.outlook.com:25
+[18/Jan/2022 05:20:17] "CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1" 400 67511
+[18/Jan/2022 06:07:26] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00PUÎ')
+[18/Jan/2022 06:07:26] " PUÎ s " 400 -
+[18/Jan/2022 06:07:26,920] - Broken pipe from ('89.248.165.52', 48950)
+
+[18/Jan/2022 06:08:27] code 400, message Bad request syntax ('\x05\x01\x00')
+[18/Jan/2022 06:08:27] " " 400 -
+[18/Jan/2022 06:08:27,196] - Broken pipe from ('89.248.165.52', 45830)
+
+Invalid HTTP_HOST header: '85.206.160.115:80'. You may need to add '85.206.160.115' to ALLOWED_HOSTS.
+Bad Request: /85.206.160.115:80
+[18/Jan/2022 06:08:27] "CONNECT 85.206.160.115:80 HTTP/1.1" 400 66887
+[18/Jan/2022 16:19:55] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[18/Jan/2022 16:19:55] "  /*à     Cookie: mstshash=Administr" 400 -
+[19/Jan/2022 00:54:04] code 400, message Bad request version ('À\x13À')
+[19/Jan/2022 00:54:04] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[19/Jan/2022 00:54:24] "GET / HTTP/1.1" 200 3836
+[19/Jan/2022 00:54:24,080] - Broken pipe from ('43.129.36.145', 22366)
+
+[19/Jan/2022 00:54:28] "GET / HTTP/1.1" 200 3836
+[19/Jan/2022 00:54:29] "GET / HTTP/1.1" 200 3836
+Not Found: /favicon.ico
+[19/Jan/2022 00:54:34] "GET /favicon.ico HTTP/1.1" 404 2990
+[19/Jan/2022 05:10:19] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[19/Jan/2022 09:55:09] code 400, message Bad request version ('À\x14À')
+[19/Jan/2022 09:55:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[19/Jan/2022 09:55:20] "GET / HTTP/1.1" 200 3836
+Not Found: /favicon.ico
+[19/Jan/2022 09:55:40] "GET /favicon.ico HTTP/1.1" 404 2990
+Not Found: /robots.txt
+[19/Jan/2022 09:55:40] "GET /robots.txt HTTP/1.1" 404 2987
+Not Found: /sitemap.xml
+[19/Jan/2022 09:55:41] "GET /sitemap.xml HTTP/1.1" 404 2990
+[19/Jan/2022 09:56:00,411] - Broken pipe from ('23.224.186.214', 40106)
+
+[19/Jan/2022 09:56:00,790] - Broken pipe from ('23.224.186.214', 40226)
+
+[19/Jan/2022 09:56:01,178] - Broken pipe from ('23.224.186.214', 40356)
+
+[19/Jan/2022 10:24:30] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[19/Jan/2022 10:24:30] "  /*à     Cookie: mstshash=Administr" 400 -
+[19/Jan/2022 10:47:12] "GET / HTTP/1.1" 200 3836
+[19/Jan/2022 13:21:48] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[19/Jan/2022 15:24:33] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[19/Jan/2022 15:24:33] "  /*à     Cookie: mstshash=Administr" 400 -
+[19/Jan/2022 17:27:11] "GET /static/style.css HTTP/1.1" 304 0
+[19/Jan/2022 17:27:11] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[19/Jan/2022 17:27:12] "GET /favicon.ico HTTP/1.1" 404 2990
+[19/Jan/2022 18:05:07] "GET / HTTP/1.1" 200 3836
+[19/Jan/2022 18:05:07] "GET /static/style.css HTTP/1.1" 304 0
+[19/Jan/2022 18:05:07] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[19/Jan/2022 18:05:08] "GET /favicon.ico HTTP/1.1" 404 2990
+[19/Jan/2022 18:05:25] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[19/Jan/2022 18:05:25] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[19/Jan/2022 18:05:25] "GET /signup/static/style.css HTTP/1.1" 404 3026
+[19/Jan/2022 18:05:45] "GET / HTTP/1.1" 200 3836
+[19/Jan/2022 18:05:45] "GET /static/style.css HTTP/1.1" 200 2555
+[19/Jan/2022 18:05:45] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[19/Jan/2022 18:05:46] "GET /favicon.ico HTTP/1.1" 404 2990
+[19/Jan/2022 18:09:11] "GET / HTTP/1.1" 200 3836
+[19/Jan/2022 18:09:12] "GET /static/style.css HTTP/1.1" 200 2555
+[19/Jan/2022 18:09:12] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[19/Jan/2022 18:09:12] "GET /favicon.ico HTTP/1.1" 404 2990
+[19/Jan/2022 18:09:39] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[19/Jan/2022 18:09:39] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /signup/static/style.css
+[19/Jan/2022 18:09:39] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Internal Server Error: /signup/create
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Signupview.py", line 25, in create
+    signup.save()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 727, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 765, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1415, in execute_sql
+    for sql, params in self.as_sql():
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in as_sql
+    for obj in self.query.objs
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1360, in <listcomp>
+    for obj in self.query.objs
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1359, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1300, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 842, in get_db_prep_save
+    return self.get_db_prep_value(value, connection=connection, prepared=False)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 837, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/fields/__init__.py", line 1827, in get_prep_value
+    ) from e
+ValueError: Field 'voterid' expected a number but got ''.
+[19/Jan/2022 18:09:44] "POST /signup/create HTTP/1.1" 500 139190
+[19/Jan/2022 18:09:47] "GET /signup/create HTTP/1.1" 200 5461
+Not Found: /signup/static/style.css
+[19/Jan/2022 18:09:47] "GET /signup/static/style.css HTTP/1.1" 404 3026
+Not Found: /bills
+[19/Jan/2022 18:09:53] "GET /bills HTTP/1.1" 404 2972
+[19/Jan/2022 19:07:07] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[19/Jan/2022 19:07:07] "  /*à     Cookie: mstshash=Administr" 400 -
+Not Found: /favicon.ico
+[20/Jan/2022 02:22:31] "GET /favicon.ico HTTP/1.1" 404 2990
+[20/Jan/2022 04:05:29] "GET / HTTP/1.1" 200 3836
+[20/Jan/2022 08:34:54] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[20/Jan/2022 08:34:54] "  /*à     Cookie: mstshash=Administr" 400 -
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[20/Jan/2022 13:10:08] "HEAD / HTTP/1.0" 400 66902
+Not Found: /system_api.php
+[20/Jan/2022 13:10:08] "GET /system_api.php HTTP/1.1" 404 2999
+Not Found: /c/version.js
+[20/Jan/2022 13:10:08] "GET /c/version.js HTTP/1.1" 404 2993
+Not Found: /streaming/clients_live.php
+[20/Jan/2022 13:10:09] "GET /streaming/clients_live.php HTTP/1.1" 404 3035
+Not Found: /stalker_portal/c/version.js
+[20/Jan/2022 13:10:09] "GET /stalker_portal/c/version.js HTTP/1.1" 404 3038
+Not Found: /stream/live.php
+[20/Jan/2022 13:10:09] "GET /stream/live.php HTTP/1.1" 404 3002
+Not Found: /flu/403.html
+[20/Jan/2022 13:10:09] "GET /flu/403.html HTTP/1.1" 404 2993
+[20/Jan/2022 13:10:09] "GET / HTTP/1.1" 200 3836
+[20/Jan/2022 13:37:21] "GET / HTTP/1.1" 200 3836
+[20/Jan/2022 13:37:21] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[20/Jan/2022 13:37:21] "GET /static/style.css HTTP/1.1" 304 0
+[20/Jan/2022 13:57:07] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[20/Jan/2022 16:05:17,039] - Broken pipe from ('45.227.254.49', 40097)
+
+[20/Jan/2022 16:05:17] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+[20/Jan/2022 16:05:17] "  ,'à     Cookie: mstshash=Domain" 400 -
+[20/Jan/2022 16:05:17] code 400, message Bad HTTP/0.9 request type ("\x03\x00\x00,'à\x00\x00\x00\x00\x00Cookie:")
+[20/Jan/2022 16:05:17] "  ,'à     Cookie: mstshash=Domain" 400 -
+[20/Jan/2022 16:47:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[20/Jan/2022 16:47:15] "  /*à     Cookie: mstshash=Administr" 400 -
+[20/Jan/2022 18:59:38] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03×³úF¦Rõ%ÃãL}m¿\x1d¥CÚ/ó#$-3p4á¥ÂV\x0b\x04 LÎÃú÷ôW]\x06t±kºr%\x86®\x8d§Â<\x00ô&\x94=ô5ª"¯S\x00&Ì¨Ì©À/À0À+À,À\x13À\tÀ\x14À')
+[20/Jan/2022 18:59:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[21/Jan/2022 00:26:48] "GET / HTTP/1.1" 200 3836
+Not Found: /favicon.ico
+[21/Jan/2022 00:26:56] "GET /favicon.ico HTTP/1.1" 404 2990
+[21/Jan/2022 03:40:43] "GET / HTTP/1.1" 200 3836
+[21/Jan/2022 06:39:31] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[21/Jan/2022 06:39:31] "  /*à     Cookie: mstshash=Administr" 400 -
+[21/Jan/2022 12:31:50] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/Voting_portal/urls.py changed, reloading.
+Performing system checks...
+
+January 14, 2022 - 11:52:13
+Django version 3.2.8, using settings 'Voting_portal.settings'
+Starting development server at http://184.168.122.169:8001/
+Quit the server with CONTROL-C.
+None
+None
+None
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 15, in <module>
+    import MySQLdb as Database
+ModuleNotFoundError: No module named 'MySQLdb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib64/python3.6/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/usr/local/lib64/python3.6/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib64/python3.6/site-packages/django/contrib/auth/models.py", line 3, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/usr/local/lib64/python3.6/site-packages/django/contrib/auth/base_user.py", line 48, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 122, in __new__
+    new_class.add_to_class('_meta', Options(meta, app_label))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 326, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/options.py", line 207, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/connection.py", line 15, in __getattr__
+    return getattr(self._connections[self._alias], item)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/connection.py", line 62, in __getitem__
+    conn = self.create_connection(alias)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 204, in create_connection
+    backend = load_backend(db['ENGINE'])
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 111, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 20, in <module>
+    ) from err
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/Voting_portal/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 110, in inner_run
+    autoreload.raise_last_exception()
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 87, in raise_last_exception
+    raise _exception[1]
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    autoreload.check_errors(django.setup)()
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib64/python3.6/site-packages/django/apps/registry.py", line 114, in populate
+    app_config.import_models()
+  File "/usr/local/lib64/python3.6/site-packages/django/apps/config.py", line 301, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/models.py", line 1, in <module>
+    from turtle import update
+ModuleNotFoundError: No module named 'turtle'
+
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/models.py changed, reloading.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+vote.user.voterid: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+
+System check identified 1 issue (0 silenced).
+[21/Jan/2022 14:05:36] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:07:27] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:07:27] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 14:07:27] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[21/Jan/2022 14:07:27] "GET /favicon.ico HTTP/1.1" 404 4138
+[21/Jan/2022 14:07:31] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:07:33] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 14:07:46] "GET /help HTTP/1.1" 200 3844
+[21/Jan/2022 14:07:48] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 14:07:50] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:07:51] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:07:53] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 14:07:54] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:07:59] "GET /help HTTP/1.1" 200 3844
+[21/Jan/2022 14:08:01] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:08:03] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 14:08:13] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 14:08:23] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:08:28] "GET /login HTTP/1.1" 200 5243
+Internal Server Error: /pod
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 22, in key_generator
+    user = pod.objects.filter(pod_owner_id_id=request.user).order_by('pod_owner_id_id')
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[21/Jan/2022 14:08:29] "GET /pod HTTP/1.1" 500 109053
+[21/Jan/2022 14:08:35] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:08:35] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 14:09:09] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 14:09:10] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:09:12] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 14:32:50] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:32:51] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[21/Jan/2022 14:32:51] "GET /static/style.css HTTP/1.1" 200 2915
+Not Found: /favicon.ico
+[21/Jan/2022 14:32:52] "GET /favicon.ico HTTP/1.1" 404 4138
+[21/Jan/2022 14:33:09] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:33:09] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 14:33:09] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[21/Jan/2022 14:33:09] "GET /favicon.ico HTTP/1.1" 404 4138
+[21/Jan/2022 14:33:37] "GET /login HTTP/1.1" 200 5243
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Loginview.py", line 25, in user_login
+    for i in a:
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+[21/Jan/2022 14:33:43] "POST /login HTTP/1.1" 500 189808
+[21/Jan/2022 14:33:59] "GET /login HTTP/1.1" 200 5243
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Loginview.py", line 25, in user_login
+    for i in a:
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+[21/Jan/2022 14:34:02] "POST /login HTTP/1.1" 500 189808
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Loginview.py", line 25, in user_login
+    for i in a:
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+[21/Jan/2022 14:34:07] "POST /login HTTP/1.1" 500 189826
+[21/Jan/2022 14:34:08] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:34:10] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 14:34:12] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:34:13] "GET /create HTTP/1.1" 200 5938
+Internal Server Error: /create
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1054, "Unknown column 'last_login' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Signupview.py", line 27, in create
+    new_user = accountform.save()
+  File "/usr/local/lib64/python3.6/site-packages/django/forms/models.py", line 468, in save
+    self.instance.save()
+  File "/usr/local/lib64/python3.6/site-packages/django/contrib/auth/base_user.py", line 67, in save
+    super().save(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 727, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 765, in save_base
+    force_update, using, update_fields,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 868, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/base.py", line 908, in _do_insert
+    using=using, raw=raw,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.OperationalError: (1054, "Unknown column 'last_login' in 'field list'")
+[21/Jan/2022 14:34:21] "POST /create HTTP/1.1" 500 224433
+[21/Jan/2022 14:35:08] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[21/Jan/2022 14:35:08] "  /*à     Cookie: mstshash=Administr" 400 -
+[21/Jan/2022 14:55:30] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 14:55:30] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 14:55:30] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[21/Jan/2022 14:55:31] "GET /favicon.ico HTTP/1.1" 404 4138
+[21/Jan/2022 14:55:35] "GET /login HTTP/1.1" 200 5243
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Loginview.py", line 25, in user_login
+    for i in a:
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+[21/Jan/2022 14:55:45] "POST /login HTTP/1.1" 500 190012
+[21/Jan/2022 14:55:53] "GET /login HTTP/1.1" 200 5243
+Internal Server Error: /login
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Loginview.py", line 25, in user_login
+    for i in a:
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 280, in __iter__
+    self._fetch_all()
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib64/python3.6/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'voting_portal.vote_pod' doesn't exist")
+[21/Jan/2022 14:56:04] "POST /login HTTP/1.1" 500 190052
+[21/Jan/2022 15:18:38] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:18:39] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 15:18:41] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:18:47] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:18:47] "GET /login HTTP/1.1" 200 5389
+[21/Jan/2022 15:19:32] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:19:32] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 15:19:37] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:19:42] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:19:42] "GET /login HTTP/1.1" 200 5389
+[21/Jan/2022 15:21:21] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:21:34] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:21:34] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+[21/Jan/2022 15:21:34] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 15:21:40] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 15:21:40] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:21:40] "GET /login HTTP/1.1" 200 5398
+Not Found: /know
+[21/Jan/2022 15:21:46] "GET /know HTTP/1.1" 404 4117
+[21/Jan/2022 15:21:51] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:21:51] "GET /show HTTP/1.1" 200 5919
+[21/Jan/2022 15:21:56] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:21:57] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 15:21:59] "POST /pod HTTP/1.1" 302 0
+[21/Jan/2022 15:21:59] "GET /pod/1 HTTP/1.1" 200 3506
+Not Found: /pod/static/style.css
+[21/Jan/2022 15:21:59] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Internal Server Error: /pod
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 22, in key_generator
+    user = pod.objects.filter(pod_owner_id_id=request.user).order_by('pod_owner_id_id')
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[21/Jan/2022 15:22:12] "GET /pod HTTP/1.1" 500 108770
+[21/Jan/2022 15:22:17] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:22:27] "GET /help HTTP/1.1" 200 3844
+[21/Jan/2022 15:22:36] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:22:37] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[21/Jan/2022 15:22:52] "GET /pod HTTP/1.1" 200 3342
+[21/Jan/2022 15:23:18] "GET /pod/1 HTTP/1.1" 200 3506
+Not Found: /pod/static/style.css
+[21/Jan/2022 15:23:18] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 15:23:27] "GET /join HTTP/1.1" 200 3350
+Not Found: /pod/
+[21/Jan/2022 15:23:41] "GET /pod/ HTTP/1.1" 404 4117
+[21/Jan/2022 15:23:44] "GET /pod/1 HTTP/1.1" 200 3506
+Not Found: /pod/static/style.css
+[21/Jan/2022 15:23:44] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 15:23:58] "GET /show HTTP/1.1" 200 5762
+[21/Jan/2022 15:24:04] "GET /pod HTTP/1.1" 200 3342
+[21/Jan/2022 15:38:19] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:38:19] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 15:39:00] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 15:39:01] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 15:39:19] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:41:17] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:41:21] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:41:28] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:43:01] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:43:12] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:43:13] "GET /show HTTP/1.1" 200 5917
+[21/Jan/2022 15:43:53] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 15:43:57] "POST /pod HTTP/1.1" 302 0
+[21/Jan/2022 15:43:57] "GET /pod/2 HTTP/1.1" 200 3499
+Not Found: /pod/static/style.css
+[21/Jan/2022 15:43:57] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 15:44:33] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 15:47:13] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 15:47:13] "GET /static/style.css HTTP/1.1" 304 0
+Not Found: /pod/static/style.css
+[21/Jan/2022 15:47:16] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 15:47:18] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 15:47:21] "GET /help HTTP/1.1" 200 3833
+Not Found: /pod/static/style.css
+[21/Jan/2022 15:47:24] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 15:47:30] "GET /logout HTTP/1.1" 302 0
+[21/Jan/2022 15:47:31] "GET /login HTTP/1.1" 200 5243
+Internal Server Error: /pod
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 22, in key_generator
+    user = pod.objects.filter(pod_owner_id_id=request.user).order_by('pod_owner_id_id')
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[21/Jan/2022 15:48:09] "GET /pod HTTP/1.1" 500 108885
+[21/Jan/2022 15:48:10] "GET /show HTTP/1.1" 200 5922
+[21/Jan/2022 15:48:30] "GET /join HTTP/1.1" 200 3361
+[21/Jan/2022 15:48:47] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:49:47] "GET /logout HTTP/1.1" 302 0
+[21/Jan/2022 15:49:48] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:49:48] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 15:49:51] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:49:51] "GET /show HTTP/1.1" 200 5762
+[21/Jan/2022 15:50:05] "GET /logout HTTP/1.1" 302 0
+[21/Jan/2022 15:50:05] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 15:50:07] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:50:27] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 15:50:27] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 15:50:58] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:51:00] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:51:34] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 15:51:34] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 15:52:17] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:52:17] "GET /login HTTP/1.1" 200 5389
+[21/Jan/2022 15:53:14] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:53:15] "GET /show HTTP/1.1" 200 5929
+[21/Jan/2022 15:54:15] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 15:54:22] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 15:54:38] "GET /show HTTP/1.1" 200 5922
+[21/Jan/2022 15:54:39] "GET /static/style.css HTTP/1.1" 200 2915
+Not Found: /favicon.ico
+[21/Jan/2022 15:54:40] "GET /favicon.ico HTTP/1.1" 404 4138
+[21/Jan/2022 15:56:07] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 15:56:07] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[21/Jan/2022 15:56:15] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 15:58:40] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 15:58:41] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 15:59:15] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 15:59:16] "GET /show HTTP/1.1" 200 5914
+[21/Jan/2022 15:59:24] "GET /login HTTP/1.1" 200 5232
+[21/Jan/2022 15:59:27] "GET /create HTTP/1.1" 200 5927
+[21/Jan/2022 15:59:36] "GET /help HTTP/1.1" 200 3833
+[21/Jan/2022 16:00:16] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 16:00:17] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 16:00:21] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 16:00:29] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 16:01:41] "POST /pod HTTP/1.1" 302 0
+[21/Jan/2022 16:01:41] "GET /pod/3 HTTP/1.1" 200 3498
+Not Found: /pod/static/style.css
+[21/Jan/2022 16:01:42] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 16:01:43] "POST /pod/3 HTTP/1.1" 200 3498
+Not Found: /pod/static/style.css
+[21/Jan/2022 16:01:44] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 16:04:10] "GET /join HTTP/1.1" 200 3350
+[21/Jan/2022 16:04:27] "POST /join HTTP/1.1" 302 0
+[21/Jan/2022 16:04:27] "GET /show HTTP/1.1" 200 5772
+[21/Jan/2022 16:04:34] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 16:08:12] "GET /join HTTP/1.1" 200 3350
+[21/Jan/2022 16:49:18] "GET /logout HTTP/1.1" 302 0
+[21/Jan/2022 16:49:18] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 16:49:19] "GET /static/style.css HTTP/1.1" 304 0
+Internal Server Error: /pod
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 22, in key_generator
+    user = pod.objects.filter(pod_owner_id_id=request.user).order_by('pod_owner_id_id')
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[21/Jan/2022 16:49:40] "GET /pod HTTP/1.1" 500 109002
+[21/Jan/2022 16:50:14] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 16:53:34] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 16:53:35] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 16:55:08] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 16:55:09] "GET /show HTTP/1.1" 200 5920
+[21/Jan/2022 16:55:18] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 16:55:21] "POST /pod HTTP/1.1" 302 0
+[21/Jan/2022 16:55:22] "GET /pod/4 HTTP/1.1" 200 3517
+Not Found: /pod/static/style.css
+[21/Jan/2022 16:55:22] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 16:56:06] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 16:56:07] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 16:56:13] "GET / HTTP/1.1" 200 2856
+[21/Jan/2022 16:56:21] "GET /show HTTP/1.1" 200 5757
+[21/Jan/2022 16:56:30] "GET /logout HTTP/1.1" 302 0
+[21/Jan/2022 16:56:31] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 16:56:35] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 16:57:49] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 16:57:50] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 16:58:37] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 16:58:37] "GET /show HTTP/1.1" 200 5921
+[21/Jan/2022 16:58:50] "GET /join HTTP/1.1" 200 3350
+[21/Jan/2022 16:59:06] "POST /join HTTP/1.1" 302 0
+[21/Jan/2022 16:59:07] "GET /show HTTP/1.1" 200 5764
+[21/Jan/2022 16:59:11] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 17:18:15] "POST /pod/4 HTTP/1.1" 200 3517
+Not Found: /pod/static/style.css
+[21/Jan/2022 17:18:15] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 17:36:36] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:36:37] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 17:36:37] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[21/Jan/2022 17:36:42] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:36:43] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 17:36:43] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[21/Jan/2022 17:36:44] "GET /favicon.ico HTTP/1.1" 404 4138
+[21/Jan/2022 17:36:44] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:36:46] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[21/Jan/2022 17:36:46] "GET /static/style.css HTTP/1.1" 200 2915
+[21/Jan/2022 17:38:03] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:38:54] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:38:56] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:38:58] "GET /help HTTP/1.1" 200 3844
+[21/Jan/2022 17:39:01] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 17:39:03] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:39:06] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 17:39:09] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 17:39:13] "GET /create HTTP/1.1" 200 5938
+Not Found: /know
+[21/Jan/2022 17:39:40] "GET /know HTTP/1.1" 404 4117
+[21/Jan/2022 17:42:13] "POST /create HTTP/1.1" 200 5938
+[21/Jan/2022 18:03:39] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 18:03:40] "GET /static/style.css HTTP/1.1" 304 0
+[21/Jan/2022 18:03:42] "GET /login HTTP/1.1" 200 5243
+[21/Jan/2022 18:03:49] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 18:03:50] "GET /login HTTP/1.1" 200 5389
+[21/Jan/2022 18:03:56] "GET /create HTTP/1.1" 200 5938
+[21/Jan/2022 18:04:17] "POST /create HTTP/1.1" 302 0
+[21/Jan/2022 18:04:18] "GET /login HTTP/1.1" 200 5398
+[21/Jan/2022 18:04:31] "POST /login HTTP/1.1" 302 0
+[21/Jan/2022 18:04:32] "GET /show HTTP/1.1" 200 5927
+[21/Jan/2022 18:05:10] "GET /join HTTP/1.1" 200 3350
+[21/Jan/2022 18:05:20] "GET /pod HTTP/1.1" 200 3328
+[21/Jan/2022 18:05:27] "POST /pod HTTP/1.1" 302 0
+[21/Jan/2022 18:05:28] "GET /pod/5 HTTP/1.1" 200 3487
+Not Found: /pod/static/style.css
+[21/Jan/2022 18:05:28] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[21/Jan/2022 19:04:44] code 400, message Bad request version ('HTTP/1.1\\r\\n')
+[21/Jan/2022 19:04:44] "GET / HTTP/1.1\r\n" 400 -
+[21/Jan/2022 21:00:01] "GET / HTTP/1.1" 200 3502
+[21/Jan/2022 21:00:02] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[21/Jan/2022 21:00:02] "GET /static/style.css HTTP/1.1" 200 2915
+Invalid HTTP_HOST header: 'httpbin.org'. You may need to add 'httpbin.org' to ALLOWED_HOSTS.
+Bad Request: /http:/httpbin.org/ip
+[22/Jan/2022 00:38:38] "GET http://httpbin.org/ip HTTP/1.1" 400 67463
+[22/Jan/2022 00:38:45] code 400, message Bad request syntax ('\x05\x01\x00')
+[22/Jan/2022 00:38:45] " " 400 -
+[22/Jan/2022 00:38:45,113] - Broken pipe from ('222.186.59.201', 53640)
+
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jan/2022 01:16:30] "GET / HTTP/1.0" 400 66897
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /nice ports,/Trinity.txt.bak
+[22/Jan/2022 01:16:30] "GET /nice%20ports%2C/Tri%6Eity.txt%2ebak HTTP/1.0" 400 67206
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jan/2022 01:16:31] "OPTIONS / HTTP/1.0" 400 66925
+[22/Jan/2022 01:16:31] code 400, message Bad request version ('RTSP/1.0')
+[22/Jan/2022 01:16:31] "OPTIONS / RTSP/1.0" 400 -
+[22/Jan/2022 01:16:36] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+[22/Jan/2022 01:16:36] "  (rþ          |                    " 400 -
+[22/Jan/2022 01:16:42] code 400, message Bad HTTP/0.9 request type ('\x00')
+[22/Jan/2022 01:16:42] "          versionbind   " 400 -
+[22/Jan/2022 01:16:42] code 400, message Bad request syntax ('HELP')
+[22/Jan/2022 01:16:42] "HELP" 400 -
+[22/Jan/2022 01:16:42] code 400, message Bad request syntax ('\x16\x03\x00\x00S\x01\x00\x00O\x03\x00?G×÷º,îê²`~ó\x00ý\x82{¹Õ\x96Èw\x9bæÄÛ<=Ûoï\x10n\x00\x00(\x00\x16\x00\x13\x00')
+[22/Jan/2022 01:16:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[22/Jan/2022 01:16:42] code 400, message Bad request version ('\x00/\x00')
+[22/Jan/2022 01:16:42] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[22/Jan/2022 01:16:43] code 400, message Bad request syntax ('\x00\x00\x00qj\x81n0\x81k¡\x03\x02\x01\x05¢\x03\x02\x01')
+[22/Jan/2022 01:16:43] "   qjn0k¡¢" 400 -
+[22/Jan/2022 01:16:48] code 400, message Bad request syntax ('\x00\x00\x00¤ÿSMBr\x00\x00\x00\x00\x08\x01@\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00@\x06\x00\x00\x01\x00\x00\x81\x00\x02PC NETWORK PROGRAM 1.0\x00\x02MICROSOFT NETWORKS 1.03\x00\x02MICROSOFT NETWORKS 3.0\x00\x02LANMAN1.0\x00\x02LM1.2X002\x00\x02Samba\x00\x02NT LANMAN 1.0\x00\x02NT LM 0.12\x00')
+[22/Jan/2022 01:16:48] "   ¤ÿSMBr    @              @     PC NETWORK PROGRAM 1.0 MICROSOFT NETWORKS 1.03 MICROSOFT NETWORKS 3.0 LANMAN1.0 LM1.2X002 Samba NT LANMAN 1.0 NT LM 0.12 " 400 -
+[22/Jan/2022 01:16:53] code 400, message Bad HTTP/0.9 request type ('l\x00')
+[22/Jan/2022 01:16:53] "l          " 400 -
+[22/Jan/2022 01:16:53] code 400, message Bad request version ('SIP/2.0')
+[22/Jan/2022 01:16:53] "OPTIONS sip:nm SIP/2.0" 400 -
+[22/Jan/2022 01:16:59] code 400, message Bad request version ('\x00/\x00')
+[22/Jan/2022 01:16:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+Invalid HTTP_HOST header: 'www'. You may need to add 'www' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jan/2022 01:17:06] "GET / HTTP/1.1" 400 66962
+[22/Jan/2022 01:17:10] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x18$@\x8fÞ\x08»J\x1cj¥¶u\x80Î\x9e\x8d=AÔþt\r»\x1eÆc\x0bøT4q \x8fî\x12Í|ò\x88\x04\x9d\x95í\x0e\x96;3?2\x15sAQ\x1fÁL}Z/$\xadì\x94Å\x00\x9c\x13\x02\x13\x03\x13\x01\x003\x009\x005\x00/À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ¯À\xadÀ£À\x9fÀ]ÀaÀWÀSÀ+À/\x00¢\x00\x9eÀ®À¬À¢À\x9eÀ\\À`ÀVÀRÀ$À(\x00k\x00jÀsÀw\x00Ä\x00ÃÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½À")
+[22/Jan/2022 01:17:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[22/Jan/2022 01:17:23] code 400, message Bad request syntax ('\x0e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbbb0100000001')
+[22/Jan/2022 01:17:23] "               bbbb0100000001" 400 -
+[22/Jan/2022 04:00:42] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[22/Jan/2022 04:00:42] "  /*à     Cookie: mstshash=Administr" 400 -
+[22/Jan/2022 10:13:33] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b¨À\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+[22/Jan/2022 10:13:33] "   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      " 400 -
+[22/Jan/2022 10:13:33] "GET / HTTP/1.1" 200 3502
+[22/Jan/2022 11:51:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[22/Jan/2022 11:51:10] "  /*à     Cookie: mstshash=Administr" 400 -
+[22/Jan/2022 13:21:08] "GET / HTTP/1.1" 200 3502
+[22/Jan/2022 13:21:08] "GET /static/style.css HTTP/1.1" 200 2915
+[22/Jan/2022 13:21:08] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[22/Jan/2022 13:21:09] "GET /favicon.ico HTTP/1.1" 404 4138
+[22/Jan/2022 13:21:12] "GET /login HTTP/1.1" 200 5243
+[22/Jan/2022 13:21:15] "GET /create HTTP/1.1" 200 5938
+[22/Jan/2022 13:21:18] "GET / HTTP/1.1" 200 3502
+[22/Jan/2022 13:21:19] "GET /help HTTP/1.1" 200 3844
+[22/Jan/2022 13:21:22] "GET /login HTTP/1.1" 200 5243
+[22/Jan/2022 18:26:24] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+[22/Jan/2022 18:26:24] "Z¥     " 400 -
+[22/Jan/2022 18:26:24,999] - Broken pipe from ('205.185.122.46', 58286)
+
+[22/Jan/2022 21:57:47] code 400, message Bad request syntax ('*1')
+[22/Jan/2022 21:57:47] "*1" 400 -
+[23/Jan/2022 06:30:13] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b¨À\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+[23/Jan/2022 06:30:13] "   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      " 400 -
+[23/Jan/2022 07:19:47] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x02\x00\x00\x00')
+[23/Jan/2022 07:19:47] "  à          " 400 -
+[23/Jan/2022 08:00:25,088] - Broken pipe from ('185.156.72.27', 4508)
+
+[23/Jan/2022 08:00:25] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[23/Jan/2022 08:00:25] "  /*à     Cookie: mstshash=Administr" 400 -
+[23/Jan/2022 08:00:25] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[23/Jan/2022 08:00:25] "  /*à     Cookie: mstshash=Administr" 400 -
+[23/Jan/2022 09:03:14] code 400, message Bad request syntax ('\x01\x01æ')
+[23/Jan/2022 09:03:14] "æ" 400 -
+[23/Jan/2022 12:06:42] "GET / HTTP/1.1" 200 3502
+[23/Jan/2022 19:53:25] code 400, message Bad request syntax ('\x00\x00\x00TZ\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x04\x010I\x00\x00\x00\x00\x80\x0b¨À\x00\x0c)t F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+[23/Jan/2022 19:53:25] "   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      " 400 -
+[23/Jan/2022 19:53:32] "GET / HTTP/1.1" 200 3502
+[23/Jan/2022 19:54:19] "GET / HTTP/1.1" 200 3502
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Jan/2022 21:01:07] "GET / HTTP/1.0" 400 66895
+[24/Jan/2022 04:29:57] code 400, message Bad request syntax ('\x01I20100')
+[24/Jan/2022 04:29:57] "I20100" 400 -
+[24/Jan/2022 05:04:16] "GET / HTTP/1.1" 200 3502
+Not Found: /favicon.ico
+[24/Jan/2022 05:04:28] "GET /favicon.ico HTTP/1.1" 404 4138
+[24/Jan/2022 05:17:26] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[24/Jan/2022 12:05:23] "GET / HTTP/1.0" 400 67291
+[24/Jan/2022 13:28:23] code 400, message Bad request syntax ('\x01\x01æ')
+[24/Jan/2022 13:28:23] "æ" 400 -
+[24/Jan/2022 16:10:26] code 400, message Bad request syntax ('\x04\x01\x00\x19h/8!\x00')
+[24/Jan/2022 16:10:26] " h/8! " 400 -
+[24/Jan/2022 16:10:26,050] - Broken pipe from ('89.248.165.52', 38000)
+
+[24/Jan/2022 16:11:26] code 400, message Bad request syntax ('\x05\x01\x00')
+[24/Jan/2022 16:11:26] " " 400 -
+[24/Jan/2022 16:11:26,334] - Broken pipe from ('89.248.165.52', 54702)
+
+Invalid HTTP_HOST header: 'hotmail-com.olc.protection.outlook.com:25'. You may need to add 'hotmail-com.olc.protection.outlook.com' to ALLOWED_HOSTS.
+Bad Request: /hotmail-com.olc.protection.outlook.com:25
+[24/Jan/2022 16:11:26] "CONNECT hotmail-com.olc.protection.outlook.com:25 HTTP/1.1" 400 67511
+[24/Jan/2022 17:08:32] code 400, message Bad HTTP/0.9 request type ('\x04\x01\x00PUÎ')
+[24/Jan/2022 17:08:32] " PUÎ s " 400 -
+[24/Jan/2022 17:08:32,584] - Broken pipe from ('89.248.165.52', 43938)
+
+[24/Jan/2022 17:09:32] code 400, message Bad request syntax ('\x05\x01\x00')
+[24/Jan/2022 17:09:32] " " 400 -
+[24/Jan/2022 17:09:32,834] - Broken pipe from ('89.248.165.52', 49702)
+
+Invalid HTTP_HOST header: '85.206.160.115:80'. You may need to add '85.206.160.115' to ALLOWED_HOSTS.
+Bad Request: /85.206.160.115:80
+[24/Jan/2022 17:09:33] "CONNECT 85.206.160.115:80 HTTP/1.1" 400 66887
+[25/Jan/2022 05:32:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[25/Jan/2022 05:32:13] "  /*à     Cookie: mstshash=Administr" 400 -
+[25/Jan/2022 06:00:54] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[25/Jan/2022 12:49:01] code 400, message Bad request syntax ('*1')
+[25/Jan/2022 12:49:01] "*1" 400 -
+[25/Jan/2022 19:44:10] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[25/Jan/2022 19:44:10] "  /*à     Cookie: mstshash=Administr" 400 -
+[25/Jan/2022 22:18:46] "GET / HTTP/1.1" 200 3502
+[25/Jan/2022 22:18:46] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[25/Jan/2022 22:18:46] "GET /static/style.css HTTP/1.1" 200 2915
+Not Found: /favicon.ico
+[25/Jan/2022 22:18:47] "GET /favicon.ico HTTP/1.1" 404 4138
+[25/Jan/2022 22:18:50] "GET /create HTTP/1.1" 200 5938
+[25/Jan/2022 22:19:51] "POST /create HTTP/1.1" 302 0
+[25/Jan/2022 22:19:52] "GET /login HTTP/1.1" 200 5398
+[25/Jan/2022 22:20:16] "POST /login HTTP/1.1" 302 0
+[25/Jan/2022 22:20:17] "GET /show HTTP/1.1" 200 5923
+[25/Jan/2022 22:20:28] "GET /pod HTTP/1.1" 200 3328
+[25/Jan/2022 22:20:33] "GET /pod HTTP/1.1" 200 3328
+[25/Jan/2022 22:20:38] "POST /pod HTTP/1.1" 302 0
+[25/Jan/2022 22:20:39] "GET /pod/6 HTTP/1.1" 200 3493
+Not Found: /pod/static/style.css
+[25/Jan/2022 22:20:39] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[25/Jan/2022 22:21:07] "GET /logout HTTP/1.1" 302 0
+[25/Jan/2022 22:21:08] "GET /login HTTP/1.1" 200 5243
+[25/Jan/2022 22:21:16] "POST /login HTTP/1.1" 302 0
+[25/Jan/2022 22:21:16] "GET /show HTTP/1.1" 200 5764
+[25/Jan/2022 22:21:19] "GET /pod HTTP/1.1" 200 3328
+[26/Jan/2022 15:55:06] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03A\x98p0Ïý\x07È+-[+\x1c\x91+ÚäIy=9ÎÔz\x13Ck\x13³\x8a\x9eû \x8d+ÞQA\x1fÃV\x8aO)uè\x91?1ä«ÿ\x11ë{þy\x0fª{'àÖ©u\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À'\x00gÀ")
+[26/Jan/2022 15:55:06] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[26/Jan/2022 15:55:07] "GET / HTTP/1.1" 200 3502
+[26/Jan/2022 15:55:07,357] - Broken pipe from ('141.98.83.139', 43620)
+
+[26/Jan/2022 19:34:11] "GET / HTTP/1.1" 200 2856
+[26/Jan/2022 19:34:11] "GET /static/style.css HTTP/1.1" 304 0
+[26/Jan/2022 19:34:12] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[26/Jan/2022 19:34:16] "GET / HTTP/1.1" 200 2856
+[26/Jan/2022 19:34:22] "GET /show HTTP/1.1" 200 5764
+[26/Jan/2022 19:34:30] "GET / HTTP/1.1" 200 2856
+[26/Jan/2022 19:34:48] "GET /logout HTTP/1.1" 302 0
+[26/Jan/2022 19:34:49] "GET /login HTTP/1.1" 200 5243
+Not Found: /login.
+[26/Jan/2022 19:39:00] "GET /login. HTTP/1.1" 404 4123
+[27/Jan/2022 00:30:26] code 400, message Bad request version ('\x03\x00(\x00\x04ÿ\x08\x00\x01U\x00\x00\x00MSSQLServer\x00É·\x00\x00')
+[27/Jan/2022 00:30:26] " 4           ( ÿ U   MSSQLServer É·  " 400 -
+[27/Jan/2022 01:46:36] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+[27/Jan/2022 01:46:36] "  /*à     Cookie: mstshash=Administr" 400 -
+[27/Jan/2022 03:42:00,788] - Broken pipe from ('104.152.52.106', 54888)
+
+[27/Jan/2022 08:58:35] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[27/Jan/2022 11:29:19] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03È\x14ý:¢\x99¾\x8aì#&7\x12\x0b\x7fù(Ad\x1e¡tzÝûaoÁ]\x82h\xad ¨\x81"+`Ã9¯\x058}\x96\x8agFs\x0bþ~Gv×ÐU\x18ªõ\x82h\x9eå\x04\x00>\x13\x02\x13\x03\x13\x01À,À0\x00\x9fÌ©Ì¨ÌªÀ+À/\x00\x9eÀ$À(\x00kÀ#À\'\x00gÀ')
+[27/Jan/2022 11:29:19] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[27/Jan/2022 13:48:05] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 13:48:06] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[27/Jan/2022 13:48:06] "GET /static/style.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/Jan/2022 13:48:07] "GET /favicon.ico HTTP/1.1" 404 4138
+[27/Jan/2022 13:48:08] "GET /login HTTP/1.1" 200 5243
+[27/Jan/2022 13:48:09] "GET /create HTTP/1.1" 200 5938
+[27/Jan/2022 13:58:33] "GET / HTTP/1.1" 200 3502
+Not Found: /favicon.ico
+[27/Jan/2022 13:58:44] "GET /favicon.ico HTTP/1.1" 404 4138
+[27/Jan/2022 14:08:42] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 14:08:42] "GET /static/style.css HTTP/1.1" 200 2915
+[27/Jan/2022 14:08:42] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[27/Jan/2022 14:08:42] "GET /favicon.ico HTTP/1.1" 404 4138
+[27/Jan/2022 14:08:48] "GET /pod/1 HTTP/1.1" 200 3506
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:08:48] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[27/Jan/2022 14:08:51] "GET /pod/2 HTTP/1.1" 200 3499
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:08:51] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[27/Jan/2022 14:08:54] "GET /pod/3 HTTP/1.1" 200 3498
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:08:54] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[27/Jan/2022 14:08:56] "GET /pod/4 HTTP/1.1" 200 3517
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:08:56] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[27/Jan/2022 14:08:59] "GET /pod/5 HTTP/1.1" 200 3487
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:08:59] "GET /pod/static/style.css HTTP/1.1" 404 4165
+[27/Jan/2022 14:09:01] "GET /pod/6 HTTP/1.1" 200 3493
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:01] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Internal Server Error: /pod/7
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 45, in show
+    key1=pod.objects.get(id=id)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+vote.models.pod.DoesNotExist: pod matching query does not exist.
+[27/Jan/2022 14:09:04] "GET /pod/7 HTTP/1.1" 500 72989
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:06] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:08] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:08] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:09] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:09] "GET /pod/static/style.css HTTP/1.1" 404 4165
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:09:10] "GET /pod/static/style.css HTTP/1.1" 404 4165
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Podview.py changed, reloading.
+Performing system checks...
+
+January 21, 2022 - 14:03:34
+Django version 3.2.8, using settings 'Voting_portal.settings'
+Starting development server at http://184.168.122.169:8001/
+Quit the server with CONTROL-C.
+dan@getplago.com
+dfgd
+dan@getplago.com
+dfgd
+davinderkmar222@gmail.com
+wddd
+erer
+
+santosh@codenomad.net
+123
+santosh@gmail.com
+ffedf
+None
+dan@getplago.com
+646456
+None
+manpreet@codenomad.net
+123
+manpreet@codenomad.net
+1
+1
+dhmorgan@aol.com
+egsthcfm
+dhmorgan@aol.com
+2
+1
+2
+manpreet@codenomad.net
+123
+manpreet@codenomad.net
+dhmo
+password
+None
+omnebonumest@gmail.com
+egsthcfm
+omnebonumest@gmail.com
+d@d.com
+password
+d@d.com
+5
+1
+2
+3
+1
+2
+3
+641549
+1
+2
+3
+j@j.com
+jefferson
+j@j.com
+6
+w@w.com
+washington
+w@w.com
+1
+2
+3
+4
+1
+2
+3
+4
+996401
+cinatit.igor.santos@gmail.com
+123456
+None
+cinatit.igor.santos@gmail.com
+123456
+cinatit.igor.santos@gmail.com
+1
+2
+3
+4
+8
+samadams@thecolonies.org
+password
+samadams@thecolonies.org
+9
+w@w.com
+washington
+w@w.com
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/base.py", line 423, in check
+    databases=databases,
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/Voting_portal/urls.py", line 24, in <module>
+    path("",include('vote.urls')),
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/urls.py", line 7, in <module>
+    from vote.Views import Keyview
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 4, in <module>
+    from numpy import append, array
+ModuleNotFoundError: No module named 'numpy'
+
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/base.py", line 423, in check
+    databases=databases,
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/Voting_portal/urls.py", line 24, in <module>
+    path("",include('vote.urls')),
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/urls.py", line 7, in <module>
+    from vote.Views import Keyview
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 5, in <module>
+    from rsa import verify
+ModuleNotFoundError: No module named 'rsa'
+
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/Voting_portal/settings.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+vote.user.voterid: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+
+System check identified 1 issue (0 silenced).
+[27/Jan/2022 14:50:38] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 14:50:38] "GET /static/style.css HTTP/1.1" 200 2915
+[27/Jan/2022 14:50:38] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[27/Jan/2022 14:50:39] "GET /favicon.ico HTTP/1.1" 404 3959
+[27/Jan/2022 14:50:42] "GET /create HTTP/1.1" 200 5942
+[27/Jan/2022 14:50:53] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 14:50:53] "GET /static/style.css HTTP/1.1" 200 2915
+[27/Jan/2022 14:50:53] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[27/Jan/2022 14:50:54] "GET /favicon.ico HTTP/1.1" 404 3959
+[27/Jan/2022 14:51:09] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 14:51:12] "GET /login HTTP/1.1" 200 5186
+[27/Jan/2022 14:51:14] "GET /create HTTP/1.1" 200 5942
+[27/Jan/2022 14:51:23] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 14:51:26] "GET /login HTTP/1.1" 200 5186
+[27/Jan/2022 14:51:37] "POST /create HTTP/1.1" 302 0
+[27/Jan/2022 14:51:37] "GET /login HTTP/1.1" 200 5341
+[27/Jan/2022 14:51:45] "POST /login HTTP/1.1" 302 0
+[27/Jan/2022 14:51:45] "GET /show HTTP/1.1" 200 5915
+[27/Jan/2022 14:51:50] "GET /pod HTTP/1.1" 200 3418
+[27/Jan/2022 14:51:51] "POST /pod HTTP/1.1" 302 0
+[27/Jan/2022 14:51:51] "GET /pod/7 HTTP/1.1" 200 3711
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:51:51] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 14:52:03] "GET /logout HTTP/1.1" 302 0
+[27/Jan/2022 14:52:04] "GET /login HTTP/1.1" 200 5186
+[27/Jan/2022 14:52:09] "GET /create HTTP/1.1" 200 5942
+[27/Jan/2022 14:52:37] "POST /create HTTP/1.1" 302 0
+[27/Jan/2022 14:52:37] "GET /login HTTP/1.1" 200 5341
+[27/Jan/2022 14:52:49] "POST /login HTTP/1.1" 302 0
+[27/Jan/2022 14:52:49] "GET /show HTTP/1.1" 200 5913
+[27/Jan/2022 14:52:53] "GET /join HTTP/1.1" 200 3350
+[27/Jan/2022 14:52:56] "POST /join HTTP/1.1" 302 0
+[27/Jan/2022 14:52:56] "GET /show HTTP/1.1" 200 5757
+[27/Jan/2022 14:52:58] "GET /pod/7 HTTP/1.1" 200 3990
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:52:58] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 14:53:43] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 14:53:45] "GET /show HTTP/1.1" 200 5757
+[27/Jan/2022 14:53:47] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 14:53:49] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 14:53:51] "GET /logout HTTP/1.1" 302 0
+[27/Jan/2022 14:53:51] "GET /login HTTP/1.1" 200 5186
+[27/Jan/2022 14:55:36] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 14:55:36] "GET /static/style.css HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/Jan/2022 14:55:37] "GET /favicon.ico HTTP/1.1" 404 3959
+[27/Jan/2022 14:55:39] "GET /create HTTP/1.1" 200 5942
+[27/Jan/2022 14:55:51] "GET /login HTTP/1.1" 200 5186
+[27/Jan/2022 14:55:56] "POST /login HTTP/1.1" 302 0
+[27/Jan/2022 14:55:57] "GET /show HTTP/1.1" 200 5763
+[27/Jan/2022 14:56:11] "GET /pod/4 HTTP/1.1" 200 3976
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:56:12] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 14:56:20] "POST /pod/4 HTTP/1.1" 200 3976
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:56:21] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 14:56:22] "POST /pod/4 HTTP/1.1" 200 3976
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:56:22] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 14:56:25] "POST /pod/4 HTTP/1.1" 200 3976
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:56:25] "GET /pod/static/style.css HTTP/1.1" 404 3986
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:56:30] "GET /pod/static/style.css HTTP/1.1" 404 3986
+Not Found: /pod/static/style.css
+[27/Jan/2022 14:57:44] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:05:57] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:06:00] "GET /show HTTP/1.1" 200 5763
+[27/Jan/2022 15:45:34] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 15:45:34] "GET /static/style.css HTTP/1.1" 304 0
+[27/Jan/2022 15:45:34] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 304 0
+Not Found: /favicon.ico
+[27/Jan/2022 15:45:35] "GET /favicon.ico HTTP/1.1" 404 3959
+[27/Jan/2022 15:47:56] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 15:47:56] "GET /static/style.css HTTP/1.1" 200 2915
+[27/Jan/2022 15:47:56] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+Not Found: /favicon.ico
+[27/Jan/2022 15:47:56] "GET /favicon.ico HTTP/1.1" 404 3959
+[27/Jan/2022 15:49:23] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:49:37] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 15:49:55] "GET /create HTTP/1.1" 200 5942
+[27/Jan/2022 15:51:17] "POST /create HTTP/1.1" 302 0
+[27/Jan/2022 15:51:17] "GET /login HTTP/1.1" 200 5341
+[27/Jan/2022 15:51:39] "POST /login HTTP/1.1" 302 0
+[27/Jan/2022 15:51:39] "GET /show HTTP/1.1" 200 5915
+[27/Jan/2022 15:52:00] "GET /pod HTTP/1.1" 200 3418
+[27/Jan/2022 15:52:11] "GET /pod HTTP/1.1" 200 3418
+[27/Jan/2022 15:52:23] "POST /pod HTTP/1.1" 302 0
+[27/Jan/2022 15:52:23] "GET /pod/8 HTTP/1.1" 200 3713
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:52:23] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:52:42] "GET / HTTP/1.1" 200 3502
+[27/Jan/2022 15:52:42] "GET /static/style.css HTTP/1.1" 200 2915
+[27/Jan/2022 15:52:42] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+[27/Jan/2022 15:52:45] "GET /create HTTP/1.1" 200 5942
+[27/Jan/2022 15:53:03] "POST /create HTTP/1.1" 302 0
+[27/Jan/2022 15:53:03] "GET /login HTTP/1.1" 200 5341
+[27/Jan/2022 15:53:14] "POST /login HTTP/1.1" 302 0
+[27/Jan/2022 15:53:14] "GET /show HTTP/1.1" 200 5914
+[27/Jan/2022 15:53:39] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:53:40] "GET /show HTTP/1.1" 200 5759
+[27/Jan/2022 15:53:42] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:53:50] "GET /show HTTP/1.1" 200 5759
+[27/Jan/2022 15:53:55] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:54:04] "GET /show HTTP/1.1" 200 5759
+[27/Jan/2022 15:54:15] "GET /pod/8 HTTP/1.1" 200 3713
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:54:15] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:54:19] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:54:20] "GET /show HTTP/1.1" 200 5759
+[27/Jan/2022 15:54:21] "GET /pod/8 HTTP/1.1" 200 3713
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:54:21] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:54:37] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:54:38] "GET /show HTTP/1.1" 200 5759
+[27/Jan/2022 15:54:52] "GET /pod/8 HTTP/1.1" 200 3713
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:54:52] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:55:13] "GET /join HTTP/1.1" 200 3350
+[27/Jan/2022 15:55:16] "POST /join HTTP/1.1" 302 0
+[27/Jan/2022 15:55:16] "GET /join HTTP/1.1" 200 3445
+[27/Jan/2022 15:55:20] "POST /join HTTP/1.1" 302 0
+[27/Jan/2022 15:55:20] "GET /show HTTP/1.1" 200 5758
+[27/Jan/2022 15:55:26] "GET /pod/8 HTTP/1.1" 200 3995
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:55:26] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:55:33] "GET /pod/8 HTTP/1.1" 200 3995
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:55:33] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 15:56:03] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 15:56:04] "GET /show HTTP/1.1" 200 5758
+[27/Jan/2022 15:56:14] "GET /pod/8 HTTP/1.1" 200 3995
+Not Found: /pod/static/style.css
+[27/Jan/2022 15:56:14] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 16:00:30] "GET /pod/8 HTTP/1.1" 200 3995
+Not Found: /pod/static/style.css
+[27/Jan/2022 16:00:30] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[27/Jan/2022 16:04:09] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 16:04:11] "GET /show HTTP/1.1" 200 5759
+[27/Jan/2022 16:07:29] "GET /pod/8 HTTP/1.1" 200 3995
+Not Found: /pod/static/style.css
+[27/Jan/2022 16:07:29] "GET /pod/static/style.css HTTP/1.1" 404 3986
+Not Found: /favicon.ico
+[27/Jan/2022 16:07:34] "GET /favicon.ico HTTP/1.1" 404 3959
+[27/Jan/2022 16:08:12] "GET / HTTP/1.1" 200 2856
+[27/Jan/2022 16:08:13] "GET /show HTTP/1.1" 200 5759
+[28/Jan/2022 04:00:43] "GET / HTTP/1.1" 200 3502
+Not Found: /favicon.ico
+[28/Jan/2022 04:00:44] "GET /favicon.ico HTTP/1.1" 404 3959
+[28/Jan/2022 04:00:48] "GET /create HTTP/1.1" 200 5942
+Not Found: /12
+[28/Jan/2022 04:00:53] "GET /12 HTTP/1.1" 404 3932
+Internal Server Error: /pod/10
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 41, in show
+    key1=pod.objects.get(id=id)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+vote.models.pod.DoesNotExist: pod matching query does not exist.
+[28/Jan/2022 04:01:05] "GET /pod/10 HTTP/1.1" 500 73068
+[28/Jan/2022 04:01:09] "GET /pod/6 HTTP/1.1" 200 3724
+Not Found: /pod/static/style.css
+[28/Jan/2022 04:01:10] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[28/Jan/2022 04:01:16] "GET /pod/6 HTTP/1.1" 200 3724
+Not Found: /pod/static/style.css
+[28/Jan/2022 04:01:16] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[28/Jan/2022 04:01:20] "GET /pod/7 HTTP/1.1" 200 3990
+Not Found: /pod/static/style.css
+[28/Jan/2022 04:01:20] "GET /pod/static/style.css HTTP/1.1" 404 3986
+[28/Jan/2022 04:01:24] "GET /pod/8 HTTP/1.1" 200 3995
+Not Found: /pod/static/style.css
+[28/Jan/2022 04:01:24] "GET /pod/static/style.css HTTP/1.1" 404 3986
+Internal Server Error: /pod/9
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 41, in show
+    key1=pod.objects.get(id=id)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 437, in get
+    self.model._meta.object_name
+vote.models.pod.DoesNotExist: pod matching query does not exist.
+[28/Jan/2022 04:01:33] "GET /pod/9 HTTP/1.1" 500 73054
+Internal Server Error: /pod
+Traceback (most recent call last):
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Keyview.py", line 23, in key_generator
+    user = pod.objects.filter(pod_owner_id_id=request.user).order_by('pod_owner_id_id')
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1320, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/usr/local/lib64/python3.6/site-packages/django/db/models/sql/query.py", line 1149, in check_related_objects
+    for v in value:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+[28/Jan/2022 04:01:37] "GET /pod HTTP/1.1" 500 109514
+Invalid HTTP_HOST header: 'ip-184-168-122-169.ip.secureserver.net:8001'. You may need to add 'ip-184-168-122-169.ip.secureserver.net' to ALLOWED_HOSTS.
+Bad Request: /
+[28/Jan/2022 08:31:03] "HEAD / HTTP/1.0" 400 66904
+Not Found: /system_api.php
+[28/Jan/2022 08:31:05] "GET /system_api.php HTTP/1.1" 404 3968
+Not Found: /c/version.js
+[28/Jan/2022 08:31:15] "GET /c/version.js HTTP/1.1" 404 3962
+Not Found: /streaming/clients_live.php
+[28/Jan/2022 08:31:24] "GET /streaming/clients_live.php HTTP/1.1" 404 4004
+Not Found: /stalker_portal/c/version.js
+[28/Jan/2022 08:31:34] "GET /stalker_portal/c/version.js HTTP/1.1" 404 4007
+Not Found: /stream/live.php
+[28/Jan/2022 08:31:43] "GET /stream/live.php HTTP/1.1" 404 3971
+Not Found: /flu/403.html
+[28/Jan/2022 08:31:53] "GET /flu/403.html HTTP/1.1" 404 3962
+[28/Jan/2022 08:32:02] "GET / HTTP/1.1" 200 3502
+[28/Jan/2022 10:26:33] "GET /static/image/monkey_think-b4a0e875e626791e184e60641a40b7f7b297fa9592a5ec449bc50473d603af74.jpg HTTP/1.1" 200 5731
+/var/www/vhosts/codenomad.in/httpdocs/voting-portal/vote/Views/Podview.py changed, reloading.
+Performing system checks...
+
+
+You have 6 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): vote.
+Run 'python manage.py migrate' to apply them.
+January 27, 2022 - 14:49:53
+Django version 3.2.8, using settings 'Voting_portal.settings'
+Starting development server at http://184.168.122.169:8001/
+Quit the server with CONTROL-C.
+tester@gmail.com
+1234
+tester@gmail.com
+<QuerySet []>
+10
+key1 pod object (7)
+tester2@gmail.com
+12345
+tester2@gmail.com
+<QuerySet []>
+1
+2
+3
+4
+5
+6
+7
+1
+2
+3
+4
+5
+6
+7
+813054 
+<QuerySet [<pod_member: pod_member object (10)>]>
+<QuerySet [<pod_member: pod_member object (10)>]>
+asdf
+key1 pod object (7)
+<QuerySet [<pod_member: pod_member object (10)>]>
+<QuerySet [<pod_member: pod_member object (10)>]>
+asdf
+w@w.com
+washington
+w@w.com
+<QuerySet [<pod_member: pod_member object (6)>]>
+<QuerySet [<pod_member: pod_member object (6)>]>
+asdf
+key1 pod object (4)
+key1 pod object (4)
+z 5
+key1 pod object (4)
+z 6
+key1 pod object (4)
+z 5
+<QuerySet [<pod_member: pod_member object (6)>]>
+<QuerySet [<pod_member: pod_member object (6)>]>
+asdf
+morgan@gmail.com
+123
+morgan@gmail.com
+<QuerySet []>
+12
+key1 pod object (8)
+sapna@gmail.com
+123
+sapna@gmail.com
+<QuerySet []>
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+key1 pod object (8)
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+key1 pod object (8)
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+key1 pod object (8)
+1
+2
+3
+4
+5
+6
+7
+8
+1
+2
+3
+4
+5
+6
+7
+8
+1
+2
+3
+4
+5
+6
+7
+8
+1
+2
+3
+4
+5
+6
+7
+8
+180647
+<QuerySet [<pod_member: pod_member object (12)>]>
+<QuerySet [<pod_member: pod_member object (12)>]>
+asdf
+key1 pod object (8)
+key1 pod object (8)
+<QuerySet [<pod_member: pod_member object (12)>]>
+<QuerySet [<pod_member: pod_member object (12)>]>
+asdf
+key1 pod object (8)
+key1 pod object (8)
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+key1 pod object (8)
+<QuerySet [<pod_member: pod_member object (11)>]>
+<QuerySet [<pod_member: pod_member object (11)>]>
+asdf
+key1 pod object (6)
+key1 pod object (6)
+key1 pod object (7)
+key1 pod object (8)
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+vote.user.voterid: (fields.W122) 'max_length' is ignored when used with IntegerField.
+	HINT: Remove 'max_length' from field
+
+System check identified 1 issue (0 silenced).

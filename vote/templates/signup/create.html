@@ -1,0 +1,182 @@
+{%include "app/header.html" %}
+
+<style>
+  .textarea.form-control {
+    height: 36px;
+  }
+  </style>
+  <body>
+ <title>Signup</title>
+<style> .user {
+  text-transform: uppercase;
+}</style>
+    <div class="container Enter_the_Floor">
+
+<div class="center If_already">
+  <h1 class="pad">Enter the Floor</h1>
+
+<p class="claimed"> If you've already claimed your seat,<br>you can enter the floor of your District Legislature (D-Leg).<br><br></p>
+<a class="btn-xl btn-primary" href="/login">Enter the Floor</a>
+<p class="pad">Otherwise...</p>
+<h1 class="pad">Claim Your Seat</h1>
+<p class="claimed">Fill out the form below. <br><br>Note: Enter your district as your two-letter state postal code <br> followed by a two-digit number. For instance, <br>the third district in Alabama would be AL03.</p>
+</div>
+
+<form class="form-horizontal form-label-left" method="POST" novalidate>
+    {% csrf_token %}
+      
+      <div class="row">
+        <input type="hidden">
+      <div class="col-md-6 col-md-offset-3" id="big-font">
+        <label for="{{ form.district.id_for_label }}">District:</label>
+        {{ form.district }}
+        <span class="error text-danger hide" ></span>
+        {% for error in form.district.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+
+       
+    
+     
+        <label for="{{ form.name.id_for_label }}">Legal Name:</label>
+        {{ form.Legal_name }}
+        {% for error in form.Legal_name.errors %}
+        <span class="error text-danger">  
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+
+        <label for="{{ form.registered.id_for_label }}">Registration Status:</label>
+        {{form.Registration_Status}}
+     
+
+        {% for error in form.Registration_Status.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+        
+        <label for="{{ form.email.id_for_label }}">Email:</label>
+        {{form.email}}
+        <span class="error text-danger hide" ></span>
+
+        {% for error in form.email.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+        
+        <label for="{{ form.address.id_for_label }}">Address:</label>
+        {{form.address}}
+        
+        {% for error in form.address.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+        
+
+        {% comment %} <label for="{{ form.executed_on.id_for_label }}">Executed on:</label>
+        {{form.executed_on}} {% endcomment %}
+     
+
+        {% for error in form.executed_on.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+       
+        <label id="showPassword" for="{{ form.password.id_for_label }}">Password:</label>
+        {{ form.password }}
+        <span>Please enter a password with following guidelines: </span>
+        <ul>
+          <li>least 8 characters long</li>
+          <li>includes number</li>
+          <li>inlcudes upper and lower case</li>
+        </ul>
+        <span class="btn btn-primary" id="generatePassoword">Generate a password</span>
+        <br>
+        {% for error in form.password.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+
+        <label for="{{ form.confirmation.id_for_label }}">Confirm Password:</label>
+        {{ form.confirmation }}
+        
+        {% for error in form.confirmation.errors %}
+        <span class="error text-danger">
+            <strong>{{ error|escape }}</strong>
+        </span>
+        {%endfor%}<br>
+      </div>
+      </div> 
+    <div class="center jumbotron input_box"> 
+      <div class="input_btn" id="">
+  
+      <input type="submit" name="commit" value="Create my account" class="btn-xl btn-primary btn-wrap-text" data-disable-with="Create my account" />
+      {% if messages%}
+      <ul class="messages">
+          {% for message in messages %}
+          <div class="container-fluid p-0">
+              <div class="row">
+                  {% comment %} <div class="col-sm-2">
+              <div class="image_check"><img src="/static/image/check.jpg"></div></div> {% endcomment %}
+              {%if "logout" in message.tags%}
+              
+              <div class="col-sm-12 padding-box"><div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+                  {% comment %} <div class="image_check"><img src="/static/image/download.png"></div>
+                  <center>{{ message }}</center>  {% endcomment %}
+
+                  <div class="image_check"><img src="/static/image/pics.png"><center>{{ message }}</center> </div>
+
+                  {%endif%}
+                  {% endfor %}
+      </ul> 
+        {%endif%} 
+      </form>  </div>
+</div>
+
+      <!-- <footer class="footer">
+  <small>
+    The Democracy Straight-Up Project 
+  </small>
+  <nav>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="#">News</a></li>
+    </ul>
+  </nav>
+</footer>
+        -->
+   
+<!-- Here starts the code copied directly from the MaxCDN section of this page: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+<!-- Optional theme (already greyed)-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- (newly greyed here down) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- end of 'MaxCDN' code -->
+{%include "app/footer.html" %}
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="/static/signUpScript.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,94 @@
+{%include "app/foheader.html"%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Join a Pod </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<style>
+.center_box {
+width: 50%;
+margin: 0 auto;
+}
+.section_text_box {
+width: 72%;
+margin: 0 auto;
+font-size: 18px;
+}
+.text-left.section_lable_Input_Pod label {
+width: 350px;
+font-size: 18px;
+}
+h4.text-left {
+font-size: 22px;
+}
+.text-left.section_lable_Input_Pod {
+margin: 20px 0px;
+}
+button.btn.btn_Create {
+border: 1px solid #c5c5c5;
+background-image: linear-gradient(#fffefe, #cdcdcd);
+padding: 8px 35px;
+font-size: 18px;
+margin: 20px 0px;
+}
+.btn_section.text-center.m-2 a {
+padding: 10px 50px;
+margin-bottom: 30px;
+}
+
+input#pod_key {
+  font-size: 16px;
+}
+ul.messages {
+  padding: 0 !important;
+  font-size: 16px !important;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container mt-5">
+<div class="center_box">
+
+<h1 class="text-center">Join a Pod</h1>
+<div class="section_text_box">
+<h4 class="text-left">You must have an Invitation Key to join a Pod.</h4>
+<p class="text-left">The First Delegate of a pod should send you an Invitation Key. This cannot be done via the website.</p>
+<p class="text-left">Or you can create your own Pod and start inviting others to join it.</p>
+</div>
+<fieldset>
+
+
+<div class="text-left section_lable_Input_Pod">
+<form action="" method="POST" novalidate>
+    {% csrf_token %}
+    <label for="POD">Enter Pod_key</label>
+    <input class="form-control" type="text" name="pod_key" id="pod_key" />
+    
+    {% if messages%}
+    <ul class="messages">
+        {% for message in messages %}
+        <div class="container-fluid p-0">
+          <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+        <center>{{ message }}</center> 
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+    
+    <input type="submit" name="commit" value="Join the pod" class="btn-xl btn-primary" data-disable-with="Enter the Floor" />
+</form> 
+ </div>
+</div>
+</div>
+</div>
+</body>
+</html>

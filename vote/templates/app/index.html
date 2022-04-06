@@ -1,0 +1,264 @@
+
+{% if user.is_authenticated %} 
+
+<html>
+  <head>
+    <title>The Democracy Straight-Up Project</title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="kfkxhEhBq73RsAXvSmP1MVvsY5Ip9duA9BaBOyCKqSx0GsVdJgcL1i+dV82Yc/YgaFKkn3TftBG4uRMQXOuRFw==" />
+   <!-- CSS only -->
+    <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+  {% comment %} <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> {% endcomment %}
+ 
+  </head>
+  <body>
+  <style>
+    /* .center.img_section img {
+      width: 87%;
+      height: 100%;
+    } */
+  </style>
+     <header class="navbar navbar-fixed-top navbar-inverse"> 
+
+      <div class="container header_container"> 
+    
+        <nav>
+
+         <div class="navbar-header">
+           <a id="logo" href="/">DSU</a>
+            <button type="button" class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                      aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
+                id="bs-example-navbar-collapse-1">
+              {% if f == 0%} 
+              <li><a href="/show">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}              
+
+              {% if t == 0%} 
+              <li><a href="/show">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}        
+
+              {% if s == 0%} 
+              <li><a href="/fshow">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}        
+
+              {% if th == 0%} 
+              <li><a href="/sshow">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}   
+
+              {% if fo == 0%} 
+              <li><a href="/tshow">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}
+              
+              {% if fi == 0%} 
+              <li><a href="/foshow">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}
+
+              {% if si == 0%} 
+              <li><a href="/fishow">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}
+
+              {% if z == 0%} 
+              <li><a href="/sishow">My Voter Page</a></li>
+              <li><a href="/help">Help</a></li>
+              <li><a href="/logout">Logout</a></li>
+              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+              <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+              {%endif%}          
+            </ul>
+         </nav>
+       </div>
+      </header>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="center jumbotron section_first">
+            <h1>Welcome to the Democracy Straight-Up Project!</h1>
+            <div class="part-2">
+              <h2> Vote directly on federal legislation. </h2>
+              <div class="row">
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        <div class="center img_section">
+          <a href="https://rubyonrails.org/">
+            <img src="/static/image/hello.jpg" alt="Head shot of chimpanzee stroking his chin as if mulling over a particularly tricky thought"  />
+          </a>
+        </div>
+        </div>
+      </div>          
+  <footer class="footer">
+  <small class="small_section">
+    The Democracy Straight-Up Project
+  </small>
+  <nav>
+    <ul class="nav-item">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">News</a></li>
+    </ul>
+  </nav>
+</footer>
+       
+</div>
+
+
+</body>
+</html>
+
+
+{%else%}
+<html>
+<head>
+<title>The Democracy Straight-Up Project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="kfkxhEhBq73RsAXvSmP1MVvsY5Ip9duA9BaBOyCKqSx0GsVdJgcL1i+dV82Yc/YgaFKkn3TftBG4uRMQXOuRFw==" />
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="static/style.css">
+
+{% comment %} <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> {% endcomment %}
+
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+
+<div class="container">
+
+<nav>
+
+<div class="navbar-header">
+<a id="logo" href="/">DSU</a>
+<button type="button" class="navbar-toggle collapsed"
+data-toggle="collapse"
+data-target="#bs-example-navbar-collapse-1"
+aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<ul class="nav navbar-nav navbar-right collapse navbar-collapse"
+id="bs-example-navbar-collapse-1">
+
+<li><a href="/">Home</a></li>
+<li><a href="/help">Help</a></li>
+<li><a href="/login">Login</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="center jumbotron section_first">
+<h1>Welcome to the Democracy Straight-Up Project!</h1>
+<div class="part-2">
+<h2> Vote directly on federal legislation. </h2>
+<div class="row">
+<div class="col-md-5">
+<div class="section_btn">
+<a class="btn-xl btn-primary" href="/create">Claim Your Seat</a> <!-- btn btn-xl btn-primary -->
+</div>
+</div>
+<div class="col-md-5">
+<div class="section_btn">
+<a class="btn-xl btn-primary" href="/login">Enter the Floor</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="center img_section">
+  <a href="">
+    <img src="/static/image/ne.jpeg" alt="Head shot of chimpanzee stroking his chin as if mulling over a particularly tricky thought"/>
+  </a>
+</div>
+</div>
+</div>
+<footer class="footer">
+<small class="small_section">
+The Democracy Straight-Up Project
+</small>
+<nav>
+<ul class="nav-item">
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">News</a></li>
+</ul>
+</nav>
+</footer>
+
+</div>
+<!-- Here starts the code copied directly from the MaxCDN section of this page: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
+
+<!-- Optional theme (already greyed)-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"> -->
+
+<!-- Latest compiled and minified CSS -->
+<!-- (newly greyed here down) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- end of 'MaxCDN' code -->
+  </body>
+</html>
+{%endif%}
+
+
+

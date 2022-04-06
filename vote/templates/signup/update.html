@@ -1,0 +1,57 @@
+{% comment %} {%include 'app/header.html'%} {% endcomment %}
+<! DOCTYPE html>  
+<html lang="en">  
+<head>  
+
+
+<body>  
+
+  
+    <div class="container">  
+      <div class="row">  
+        <div class="col-xs-12">  
+            <form class="form-horizontal form-label-left" method="POST" enctype="multipart/form-data" novalidate> 
+                {% csrf_token %}
+            
+                <div class="row form_section_form">
+                <div class="col-md-6 col-md-offset-3" id="big-font">
+                <label for="district">District</label> 
+                <input class="form-control" type="text" name="district" id="district" value="{{users_list.district}}"/>
+                
+                <label for="user_voterid">Voterid</label>
+                <input class="form-control" type="text" value="{{users_list.voterid}}" name="voterid" id="voterid" />
+                
+                <label for="user_name">Name</label>
+                <input class="form-control" type="text" value="{{users_list.name}}" name="name" id="name" />
+    
+                <label for="user_email">Email</label>
+                <input class="form-control" type="email"value="{{users_list.email}}" name="email" id="email" />
+    
+                <label for="user_password">Password</label>
+                <input class="form-control" type="password" name="password" id="password" value="{{users_list.password}}"/>
+    
+                <label for="user_password_confirmation">Confirmation</label>
+                <input class="form-control" type="password" name="confirmation" id="confirmation" value="{{users_list.confirmation}}"/>
+    
+                
+                <label for="upload">Upload Pic</label>
+                <input class="form-control" type="file" name="upload" id="upload" />
+                </div>
+                </div>
+              
+            <div class="center jumbotron">
+                <div class="" id="">
+                <input type="submit" name="commit" value="Create my account" class="btn-xl btn-primary btn-wrap-text" data-disable-with="Create my account" />
+            </form>
+            
+            </div>
+    
+
+
+            
+        </div>  
+      </div>  
+    </div>  
+</body>
+</html>    
+{%include 'app/footer.html'%}

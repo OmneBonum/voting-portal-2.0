@@ -1,0 +1,3046 @@
+[
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AL07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AK01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AZ09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AR01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AR02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AR03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"AR04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA17"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA18"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA19"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA20"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA21"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA22"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA23"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA24"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA25"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA26"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA27"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA28"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA29"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA30"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA31"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA32"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA33"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA34"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA35"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA36"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA37"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA38"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA39"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA40"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA41"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA42"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA43"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA44"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA45"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA46"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA47"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA48"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA49"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA50"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA51"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA52"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CA53"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CO07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CT01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CT02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CT03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CT04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"CT05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"DE01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL17"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL18"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL19"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL20"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL21"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL22"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL23"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL24"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL25"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL26"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"FL27"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"GA14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"HI01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"HI02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"ID01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"ID02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL17"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IL18"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IN09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"IA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KS01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KS02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KS03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KS04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KY01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KY02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KY03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KY04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KY05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"KY06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"LA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"LA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"LA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"LA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"LA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"LA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"ME01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"ME02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MD08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MA09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MI14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MN08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MS01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MS02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MS03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MS04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MO08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"MT01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NE01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NE02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NE03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NV01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NV02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NV03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NV04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NH01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NH02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NJ12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NM01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NM02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NM03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY17"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY18"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY19"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY20"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY21"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY22"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY23"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY24"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY25"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY26"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NY27"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"NC13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"ND01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OH16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OK01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OK02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OK03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OK04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OK05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OR01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OR02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OR03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OR04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"OR05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA17"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"PA18"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"RI01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"RI02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SC07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"SD01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TN09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX12"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX13"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX14"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX15"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX16"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX17"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX18"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX19"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX20"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX21"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX22"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX23"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX24"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX25"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX26"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX27"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX28"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX29"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX30"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX31"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX32"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX33"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX34"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX35"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"TX36"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"UT01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"UT02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"UT03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"UT04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VT01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"VA11"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA09"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WA10"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WV01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WV02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WV03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI01"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI02"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI03"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI04"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI05"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI06"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI07"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WI08"
+        }
+    },
+    
+    {
+        "model":"votePortal.Districts",
+        "fields":{
+            "code":"WY01"
+        }
+    }
+    ]

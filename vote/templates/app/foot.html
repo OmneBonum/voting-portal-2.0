@@ -1,0 +1,186 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+
+ <link rel="stylesheet" href="static/style.css">
+
+ <header class="navbar navbar-fixed-top navbar-inverse">
+
+    <div class="container header_container"> 
+      
+      
+      
+      <nav>
+
+        <div class="navbar-header">
+          <a id="logo" href="/">DSU</a>
+           <button type="button" class="navbar-toggle collapsed"
+               data-toggle="collapse"
+               data-target="#bs-example-navbar-collapse-1"
+                     aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+           </div>        
+           <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
+               id="bs-example-navbar-collapse-1">
+             {% comment %} <li><a href="/">Home</a></li> {% endcomment %}
+             
+             {% comment %} <li><a href="/fshow">Voter</a></li>
+             <li><a href="/help">Help</a></li>
+             <li><a href="/logout">Logout</a></li>
+             <li><a href="/member">Members</a></li>
+             <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+            </ul>
+        </nav> {% endcomment %}
+
+            {%if q == 0%}
+                  
+             <li><a href="/show">My Voter Page</a></li>
+             <li><a href="/help">Help</a></li>
+             <li><a href="/logout">Logout</a></li>
+             {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+             <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+            </ul>
+            {%endif%}
+        
+          {% if w == 0 %}
+
+          <li><a href="/fshow">My Voter Page</a></li>
+          <li><a href="/help">Help</a></li>
+          <li><a href="/logout">Logout</a></li>
+          {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+          <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+         </ul>
+         {%endif%}
+
+         {% if e == 0 %}
+
+         <li><a href="/sshow">My Voter Page</a></li>
+         <li><a href="/help">Help</a></li>
+         <li><a href="/logout">Logout</a></li>
+         {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+         <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+        </ul>
+        {%endif%}
+        {% if r == 0 %}
+
+        <li><a href="/tshow">My Voter Page</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/logout">Logout</a></li>
+        {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+        <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+       </ul>
+
+        {%endif%}
+
+        {% if t == 0 %}
+
+        <li><a href="/foshow">My Voter Page</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/logout">Logout</a></li>
+        {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+        <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+       </ul>
+
+        {%endif%}
+
+        {% if y == 0 %}
+
+        <li><a href="/fishow">My Voter Page</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/logout">Logout</a></li>
+        {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+        <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+       </ul>
+
+        {%endif%}
+
+
+        {% if u == 0 %}
+
+        <li><a href="/sishow">My Voter Page</a></li>
+        <li><a href="/help">Help</a></li>
+        <li><a href="/logout">Logout</a></li>
+        {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
+        <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+       </ul>
+
+        {%endif%}
+
+        
+      {% if a == 0 %}
+
+      <li><a href="/show">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+
+      {%endif%} 
+      {% if s == 0 %}
+
+      <li><a href="/show">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+      
+      {%endif%} 
+
+      {% if d == 0 %}
+
+      <li><a href="/fshow">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+    
+      {%endif%} 
+      {% if f == 0 %}
+
+      <li><a href="/sshow">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+  
+      {%endif%} 
+
+      {% if g == 0 %}
+
+      <li><a href="/tshow">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+  
+      {%endif%} 
+
+      {% if h == 0 %}
+
+      <li><a href="/foshow">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+  
+      {%endif%} 
+
+      {% if j == 0 %}
+
+
+      <li><a href="/fishow">My Voter Page</a></li>
+      <li><a href="/help">Help</a></li>
+      <li><a href="/logout">Logout</a></li>
+      <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+      {%endif%} 
+    
+        
+
+      </ul>
+
+
+
+
+     </nav>
+
+
+
+    </div>
+  </header>

@@ -1,0 +1,119 @@
+{%include "app/foot.html" %}
+
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Member</title>   
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"> </script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"> </script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+
+<style>
+body {
+margin: 0;
+min-height: 100vh;
+padding: 0;
+background-color: var(--clr-light);
+color: var(--clr-black);
+font-family: 'Poppins', sans-serif;
+font-size: 1.125rem;
+justify-content: center;
+align-items: center;
+}
+h2 {
+font-family: 'Indie Flower', cursive;
+font-size: 32px;
+color: #03A9F4;
+font-weight: bold;
+text-align: center;
+padding: 20px 0;
+}
+
+table caption {
+padding: .5em 0;
+}
+
+table.dataTable th
+{
+white-space: nowrap;
+}
+table.dataTable td {
+white-space: nowrap;
+}
+.p {
+text-align: center;
+padding-top: 140px;
+font-size: 14px;
+}
+
+
+
+button.btn.vote {
+    background: #008000 !important;
+    color: #ffffff !important;
+    font-size: 14px;
+    margin-left: 20px;
+    position: relative;
+    top: -16px;
+}
+
+</style>
+<body>
+
+<form class="form-horizontal form-label-left" method="POST" novalidate id="compare">
+{% csrf_token %}
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<table class="table table-bordered table-hover dt-responsive">
+<thead>
+<tr>
+
+<th>S.No</th>
+<th> District</th>
+<th> Name </th>
+<th> Email </th>
+<th> member_comment </th>
+
+</tr>
+</thead>
+<tbody>  
+{% for users_list in context%}
+<tr>
+  
+  {%if forloop.counter < 10%}
+<td>{{0}}{{forloop.counter}}
+ {%endif%}
+ 
+<td>{{users_list.district }}</td>
+<td> {{users_list.name}}</td>
+<td>{{users_list.email}}</td>
+<td><textarea type="textarea" name="text" form="compare"></textarea> <button type="submit" class="btn vote" name="subm" value="{{users_list.id}}">Submit</td></button>
+
+{% comment %} <button type="submit" class="btn btn-primary"><a href="{%url 'insurance' %}"style="color:white">Cancel</a></button> {% endcomment %}
+
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+
+
+
+<script>
+$('table').DataTable();
+</script>
+</body>
+{% comment %} {%include 'app/footer.html'%} {% endcomment %}
+</html>
