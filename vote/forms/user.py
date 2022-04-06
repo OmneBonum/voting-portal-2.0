@@ -38,6 +38,7 @@ class AddCreateForm(ModelForm):
         attrs={
         'class':'form-control',
         'placeholder':'Enter your name',
+        'style': 'text-transform: uppercase',
         }
     ))
  
