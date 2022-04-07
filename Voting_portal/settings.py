@@ -39,7 +39,7 @@ MESSAGE_TAGS = {
         messages.ERROR: 'alert-danger',
  }
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'dsup.herokuapp.com']
 
 
 # Application definition
