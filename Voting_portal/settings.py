@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get('SECRET_KEY')  
 
-DEBUG = eval(os.environ.get('DEBUG'))
+# DEBUG = eval(os.environ.get('DEBUG'))
+DEBUG = True
 
 from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
@@ -86,22 +87,29 @@ WSGI_APPLICATION = 'Voting_portal.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 # check weather we are in local host or not
-if not eval(os.environ.get('PRODUCTION')):
-    DATABASES = {
-    'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-else:
-    # change to the new production db
-    DATABASES = {
-    'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+# if not eval(os.environ.get('PRODUCTION')):
+#     DATABASES = {
+#     'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+# else:
+#     # change to the new production db
 
+#     DATABASES = {
+#     'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+
+DATABASES = {
+'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
@@ -167,3 +175,5 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT          = os.environ.get('EMAIL_PORT')
 EMAIL_USE_TLS       = True
 
+
+# postgres://quktxbqzgdwuqa:04419a13767ca9df93cb3b127e7f674e72c99cd7ccfb8170bc4151de2500555b@ec2-52-73-155-171.compute-1.amazonaws.com:5432/d2rvlcciciqf6h
