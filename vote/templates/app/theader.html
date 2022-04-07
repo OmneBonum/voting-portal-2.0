@@ -1,6 +1,7 @@
+{% load static %}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="anonymous">
 
-<link rel="stylesheet" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 
  <header class="navbar navbar-fixed-top navbar-inverse">
 
@@ -35,7 +36,7 @@
              <li><a href="/thelp">Help</a></li>
              <li><a href="/logout">Logout</a></li>
              {% comment %} <li><a href="/member">Members</a></li> {% endcomment %} 
-             <img src="/static/image/user.png" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+             <img src="{% static 'image/user.png' %}" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
             
             {%else%}
             <li><a href="/">Home</a></li>
