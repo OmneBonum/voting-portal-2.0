@@ -1,4 +1,3 @@
-
 a#logo {
   float: left;
   margin-right: 10px;
@@ -12,9 +11,6 @@ a#logo {
   cursor: pointer;
 }
 
-/* .navbar-inverse .navbar-nav>li>a {
-  color: #ffffff;
-} */
 
 .center.jumbotron.section_first h1 {
   font-size: 48px;
