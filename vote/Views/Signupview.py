@@ -28,21 +28,22 @@ def entry_code_test(request):
     return HttpResponse(entry_code_generator())
 
 def entry_code_generator():
-    from random import randint
-    code = get_random_string(length=1)
-    code += str(randint(0,9))
-    code += get_random_string(length=1)
-    code += str(randint(0,9))
-    code += get_random_string(length=1)
+    import random
+    code  = str(random.choice('abcdefghijklmnpqrstuvwxyz'))
+    code += str(random.randint(1,9))
+    code += str(random.choice('abcdefghijklmnpqrstuvwxyz'))
+    code += str(random.randint(1,9))
+    code += str(random.choice('abcdefghijklmnpqrstuvwxyz'))
     code = code.upper()
-    print("code: ", code)
+
+    # print("code: ", code)
     # check that if not taken. 
     users = get_user_model()
     is_exist = users.objects.filter(entry_code = code).exists()
     
     print("exist: ", is_exist)
     if is_exist:
-        print("calling the entry_code_generator again")
+        # print("calling the entry_code_generator again")
         entry_code_generator()
 
     return code
