@@ -176,4 +176,5 @@ EMAIL_PORT          = os.environ.get('EMAIL_PORT')
 EMAIL_USE_TLS       = True
 
 
+# this is the heroku postgresql DB credential. 
 # postgres://quktxbqzgdwuqa:04419a13767ca9df93cb3b127e7f674e72c99cd7ccfb8170bc4151de2500555b@ec2-52-73-155-171.compute-1.amazonaws.com:5432/d2rvlcciciqf6h

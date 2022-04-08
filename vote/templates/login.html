@@ -1,4 +1,4 @@
-
+{% load static %}
 {%include "app/header.html" %}
 <title>Login</title>
   <body>
@@ -31,7 +31,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
  
     <div class="container Enter_the_Floor">
       <h1 class="text-center sec_Enter">Enter the Floor</h1>
@@ -46,11 +46,22 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <form class="form-horizontal form-label-left" method="POST" novalidate>
+    <form class="form-horizontal " method="POST" novalidate>
       {% csrf_token %}
-  
-      <label for="session_email">Username</label>
-      <input class="form-control" type="name" name="name" id="name" />
+
+      
+      <label for="">District - Entry Code</label>
+      <div class="row">
+        <div class="col col-sm-6">
+          <input class="form-control" maxlength="4"  placeholder="District" type="text" name="district" id="district" style="text-transform:uppercase" />
+        <span class="error text-danger hide" ></span>
+
+          <span style="position: absolute; top: 15px; right: -2px;">-</span>
+        </div>
+        <div class="col col-sm-6">
+          <input class="form-control" maxlength="5" placeholder="Entry code" type="text" name="entry_code" id="entry_code" style="text-transform:uppercase" />
+        </div>
+      </div>
 
       <label for="session_password">Password</label>
       <input class="form-control" type="password" name="password" id="password" />
@@ -74,25 +85,12 @@
     {% endfor %}
 </ul>
 {% endif %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="{% static 'signUpScript.js' %}"></script>
 
 
-<!-- Here starts the code copied directly from the MaxCDN section of this page: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
-
-<!-- Optional theme (already greyed)-->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"> -->
-
-<!-- Latest compiled and minified CSS -->
-<!-- (newly greyed here down) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- end of 'MaxCDN' code -->
 {%include "app/footer.html" %}
+
   </body>
 </html>

@@ -14,8 +14,6 @@ from django.urls import reverse
 
 
 
-
-
 def index(request):
     f_key=pod_groups.objects.filter(group_owner_id=request.user.id)
     pkey=f_key.values_list("group_key",flat=True).first()
@@ -23,7 +21,6 @@ def index(request):
     for d in a:
       print(d)
     
-  
 
     template = loader.get_template('app/index.html')
     print("pod",pkey)
@@ -53,10 +50,11 @@ def index(request):
 
 def user_login(request):
     if request.method == "POST":
-        uname= request.POST.get('name')
-        print(uname)
+        
+        entry_code= request.POST.get('entry_code')
+        print("entruy code: ",entry_code)
         upass= request.POST.get('password')
-        print(upass)      
+        print('upass: ',upass)      
         # print("hritik")
         a=pod_groups.objects.all()
         for i in a: 
@@ -65,8 +63,8 @@ def user_login(request):
           current_user = request.user.id
           
 
-        users = authenticate(username=uname,password=upass)
-        print(users)    
+        users = authenticate(username=entry_code,password=upass)
+        print("user is authenticated: ", users)    
         a=pod_groups.objects.filter(id=request.user.id)
         
         b=a.values_list("group_key",flat=True)
@@ -107,7 +105,6 @@ def user_login(request):
                 else:
                   return redirect('/fshow')  
          
-            
             return redirect('/show')  
 
         else:

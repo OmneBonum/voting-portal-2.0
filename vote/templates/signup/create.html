@@ -1,3 +1,4 @@
+{% load static %}
 {%include "app/header.html" %}
 
 <style>
@@ -139,20 +140,6 @@
         {%endif%} 
       </form>  </div>
 </div>
-
-      <!-- <footer class="footer">
-  <small>
-    The Democracy Straight-Up Project 
-  </small>
-  <nav>
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="#">News</a></li>
-    </ul>
-  </nav>
-</footer>
-        -->
    
 <!-- Here starts the code copied directly from the MaxCDN section of this page: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
 
@@ -162,21 +149,21 @@
 <!-- Latest compiled and minified CSS -->
 <!-- (newly greyed here down) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<!-- jQuery library -->
+ jQuery library -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
+Popper JS -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
+Latest compiled JavaScript -->
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- end of 'MaxCDN' code -->
+end of 'MaxCDN' code -->
 {%include "app/footer.html" %}
  
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script src="/static/signUpScript.js"></script>
+    <script src="{% static 'signUpScript.js' %}"></script>
 
   </body>
 </html>

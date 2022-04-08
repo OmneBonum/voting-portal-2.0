@@ -42,9 +42,8 @@ urlpatterns = [
     path("sihelp",Loginview.sihelp,name='sihelp'),
     path('member',memberview.memberIndex,name="member_index"),
 
-
-
-# signup urls  
+    
+    # signup urls  
     path("create",Signupview.create,name='signupcreate'),
     path("update/<int:id>",Signupview.update,name='signupupdate'),
 

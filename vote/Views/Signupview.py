@@ -24,21 +24,36 @@ def index(request):
     return render(request,"pod/p.html",context) 
 
 
+def entry_code_generator():
+    from random import randint
+    code = get_random_string(length=1)
+    code += str(randint(0,9))
+    code += get_random_string(length=1)
+    code += str(randint(0,9))
+    code += get_random_string(length=1)
+    code = code.upper()
+    print("code: ", code)
+    # check that if not taken. 
+    users = get_user_model()
+    is_exist = users.objects.filter(entry_code = code).exists()
+    
+    print("exist: ", is_exist)
+    if is_exist:
+        print("calling the entry_code_generator again")
+        entry_code_generator()
+
+    return code
+
 def create(request):
     if request.method == 'POST':
         accountform = AddCreateForm(request.POST)
         if accountform.is_valid():
-            names=request.POST.get("Legal_name")
-            print("Legal_name",names)
-            unique_id = get_random_string(length=5)
-            uniqueName=names + unique_id
-            accountform.name=uniqueName
             new_user = accountform.save(commit=False)
+            new_user.name=accountform.cleaned_data.get('Legal_name')
             new_user.is_active = False
+            new_user.entry_code = entry_code_generator()
             new_user.save()
-            new_user.name=uniqueName
 
-            
             new_user.set_password(
                 accountform.cleaned_data.get('password')         
             )
@@ -57,13 +72,11 @@ def create(request):
                         to=[to_email]
             )
            
-
             a=accountform.save()
             print(a.id)
             email.send()
             a=user.objects.filter(created_at__lte=datetime.now()-timedelta(minutes=10),registered=1).exists()
-            print("true")
-        
+          
             messages.success(request,"Thanks for registering with us. Please confirm your email address to complete the registration.",extra_tags='logout')
             return redirect('/create')
 
@@ -76,7 +89,6 @@ def create(request):
 
 def activate(request, uidb64, token):
     User=get_user_model()
-    
     try:
         uid = force_str(urlsafe_base64_decode(uidb64))
         users = User.objects.get(id=uid)
@@ -88,16 +100,13 @@ def activate(request, uidb64, token):
         print("user",users)
     if users is not None and account_activation_token.check_token(users, token):
         users.is_active = user.objects.filter(id=uid).update(is_active=True)
-        login(request, users)
+        # login(request, users)
        
         # messages.success(request,"Successfully Registered")
-        return redirect('/')
+        return render(request, 'intro.html', {'entry_code':users.get_entry_code()})
         
-        # return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
     else:
         return HttpResponse('Activation link is invalid!')
-
-
 
 
 def update(request,id):

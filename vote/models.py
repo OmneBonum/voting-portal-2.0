@@ -11,7 +11,7 @@ from datetime import datetime
 class user(AbstractBaseUser,PermissionsMixin):
     district=models.CharField(max_length=4)
     voterid=models.IntegerField(null=True)
-    name=models.CharField(max_length=200,unique=True)
+    name=models.CharField(max_length=200,null=True)
     email=models.EmailField(_('email'),unique=True,blank=True)
     password=models.CharField(max_length=200)
     Registration_Status=models.CharField(max_length=200)
@@ -26,14 +26,16 @@ class user(AbstractBaseUser,PermissionsMixin):
 		Unselect this instead of deleting accounts.')
     created_at = models.DateTimeField(auto_now_add=True,null=True)
     updated_at =  models.DateTimeField(auto_now=True)
-    entry_code=models.CharField(max_length=200,null=True)
+    entry_code =  models.CharField(max_length=200,unique=True)
 
-    USERNAME_FIELD 	='name'
+    USERNAME_FIELD 	='entry_code'
     objects = CustomUserManager()
 
     def __str__(self):
         return self.email
 
+    def get_entry_code(self):
+      return self.district.upper()+"-"+self.entry_code
 
 class pod_groups(models.Model):
   group_key =  models.CharField(unique=True, editable=False,max_length=6)
