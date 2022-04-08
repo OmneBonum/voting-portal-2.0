@@ -23,6 +23,9 @@ def index(request):
     context = {'user_list':user.objects.all()}
     return render(request,"pod/p.html",context) 
 
+def entry_code_test(request):
+    
+    return HttpResponse(entry_code_generator())
 
 def entry_code_generator():
     from random import randint
