@@ -52,10 +52,7 @@ def user_login(request):
     if request.method == "POST":
         
         entry_code= request.POST.get('entry_code')
-        print("entruy code: ",entry_code)
         upass= request.POST.get('password')
-        print('upass: ',upass)      
-        # print("hritik")
         a=pod_groups.objects.all()
         for i in a: 
           b=i.id
@@ -64,11 +61,11 @@ def user_login(request):
           
 
         users = authenticate(username=entry_code,password=upass)
-        print("user is authenticated: ", users)    
+           
         a=pod_groups.objects.filter(id=request.user.id)
         
         b=a.values_list("group_key",flat=True)
-        print("group",b)
+        
         #d
         if users is not None:
             login(request,users)

@@ -28,17 +28,17 @@ def podshow(request):
      print(skey)
      values_obj=pod_groups.objects.count()
      user_obj=(values_obj)
-     print(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,''''''''",user_obj)
+     print("userobj: ",user_obj)
      key1=pod_groups_members.objects.filter(member_id=request.user.id)
      
      fpods=pod_groups.objects.filter(group_owner_id=request.user.id)
      k=fpods.values_list('group_owner_id',flat=True)
      obj=user.objects.filter(id=request.user.id).values_list("district",flat=True)
      dist=obj[0]
-     print("userrrrrrrrrrrrr",dist)
-     print("k",k)
+     print("user district: ",dist)
+     print("first pod: ",k)
      if not request.user.is_authenticated:
-      return redirect("/")
+          return redirect("/")
 
 
      if pod_groups.objects.filter(group_owner_id=request.user).exists():
@@ -46,14 +46,12 @@ def podshow(request):
      else:
         owner_id=0
 
-    
      if key1:
           print(key1) 
           for i in key1:
                z=i.group_id
      
           
-          print("asdf")
           current_user =request.user.id
           a = pod_groups_members.objects.filter(member_id=current_user).exists()
           # if request.user.is_authenticated:
@@ -72,14 +70,15 @@ def validate(request):
           hello=destic[0]
      else:
           hello="bbdb"
-     print("zzzzzzzzzzzzzz",hello)
+     print("district: ",hello)
      
      if user.objects.filter(district=hello):
-          print("bjcbcjbcd",destic)
+          print("antoher district: ",destic)
      else:
-          print("kkdvdvbdvb")   
+          print("not a district.")   
      if not request.user.is_authenticated:
         return redirect("/")
+
      if request.method =="POST":
           join=pod_groups_members()
          
@@ -97,10 +96,6 @@ def validate(request):
                if pod_groups.objects.filter(group_key =uname).exists():
                     
                   
-
-                    
-               
-               
                     if pod_groups.objects.filter(group_key=uname).exists() and  Dist_obj==hello:
                          print("key")
                          key1=pod_groups.objects.filter(group_key=uname)
@@ -125,9 +120,7 @@ def validate(request):
                               join.save()
                               return redirect('/show')
                       
-                    
-                         
-                    
+
                     elif Dist_obj!=hello:     
                          print("district")
                          messages.error(request,"Your Invitation Key is invalid or expired. Please contact--in real life--the Delegate for the group you are trying to join to get a valid key.",extra_tags="user") 

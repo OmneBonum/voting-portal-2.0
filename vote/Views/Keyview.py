@@ -42,7 +42,7 @@ def key_generator(request):
         d=pod_groups.objects.filter(group_owner_id=request.user.id).select_related("group_owner")
         print("dddfff",d)
         for i in d:
-            print("sdfsd",i.district)
+            print("district: ",i.district)
  
 
         key.save()      
@@ -57,8 +57,6 @@ def key_generator(request):
         return redirect("/show")
            
     return render(request,"key/key.html",{'user':user,'is_key_generate':1,'a':0,"z":z})
-
-
 
 def show(request,id):
     elect_obj=pod_groups_members.objects.filter(member_id=request.user.id).values_list("elect_count",flat=True)[0]
@@ -81,7 +79,6 @@ def show(request,id):
     else:
         evote=0
 
-   
     # print("dskdksdhkshbd",currnt)
     devote = currnt.values_list("devote_given",flat=True)
     # devote = currnt.values_list('vote_count',flat=True)
@@ -97,7 +94,7 @@ def show(request,id):
     
     obj=user.objects.filter(id=request.user.id).values_list("district",flat=True)
     dist=obj[0]
-    print("userrrrrrrrrrrrr",dist)
+    print("user: ",dist)
     users = pod_groups.objects.filter(id=key1.id) 
     if not request.user.is_authenticated:
       return redirect("/")
@@ -110,7 +107,7 @@ def show(request,id):
         owner_id=0       
     approval_obj = pod_groups_members.objects.filter(group_id=key1)
     podlength=len(pod_groups_members.objects.filter(group_id=key1,member_status = 1))
-    print(">>>>>>>>>>>>>>>>>>>>>",podlength)
+    print("pod length: ",podlength)
     array=[]
     z=approval_obj
     print("z",len(z))
@@ -130,7 +127,6 @@ def show(request,id):
     status=array[:12]
     
     if request.method=="POST" and "submit" in request.POST:
-        
         
         if pod_groups_members.objects.filter(member_status=0,group_id=key1):
              pod_groups_members.objects.update(vote_given=0)
@@ -170,12 +166,7 @@ def show(request,id):
         length=podLen
         for i in show:
             print("Elect",i.vote_count)
-        # if i.vote_count < length:
-        #     print(i.member.id)
-        
-            # print("true")
-        
-          
+
             
             #member.pod_owner_id_id=pod_groups_members.objects.filter(id=q).update(member_status=0)   
         return redirect(request.path_info)   
