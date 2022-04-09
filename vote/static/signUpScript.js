@@ -66,16 +66,14 @@ const validateEmail = (email) => {
 
 
 const generatePss = document.getElementById('generatePassoword');
+
 generatePss.addEventListener('click', (Event)=>{
   // generate a password and show it on password labal
   let  pass = generatePassword();
-  let lbl = document.getElementById('showPassword');
-  lbl.innerText = ''
-  let gen = `Password: Generated password is: ${pass}`;
-  lbl.append(gen)
-
   // add the generated password into password input field as well
    document.querySelector("input[name='password']").value = pass;
+   document.querySelector("input[name='password']").type='text';
+   document.getElementById('basic-addon2').innerHTML = 'hide';
 })
 function generatePassword() {
   var length = 8,
@@ -86,3 +84,18 @@ function generatePassword() {
   }
   return retVal;
 }
+
+// toggle the show passoword
+
+let show = document.getElementById('basic-addon2')
+show.style.cursor = "pointer";
+show.addEventListener('click', function(event){
+  let inpt = document.querySelector("input[name='password']");
+  if (inpt.type === "password") {
+    inpt.type = "text";
+    event.target.innerHTML = 'hide';
+  } else {
+    inpt.type = "password";
+    event.target.innerHTML = 'show';
+  }
+})

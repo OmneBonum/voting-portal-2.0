@@ -87,7 +87,15 @@
         {%endfor%}<br>
        
         <label id="showPassword" for="{{ form.password.id_for_label }}">Password:</label>
-        {{ form.password }}
+        <div class="input-group">
+          <input type="password" name="password" 
+          class="form-control" id="id_password" 
+          style="margin-top:0" placeholder="Enter your password"
+          aria-describedby="basic-addon2">
+          <span class="input-group-addon" id="basic-addon2">show</span>
+        </div>
+        
+
         <span>Please enter a password with following guidelines: </span>
         <ul>
           <li>least 8 characters long</li>
@@ -140,23 +148,7 @@
     </div>
 </div>
    
-<!-- Here starts the code copied directly from the MaxCDN section of this page: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->
 
-<!-- Optional theme (already greyed)-->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"> -->
-
-<!-- Latest compiled and minified CSS -->
-<!-- (newly greyed here down) <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
- jQuery library -->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-Popper JS -->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-Latest compiled JavaScript -->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-end of 'MaxCDN' code -->
 {%include "app/footer.html" %}
  
 
