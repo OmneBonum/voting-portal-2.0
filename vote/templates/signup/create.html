@@ -37,9 +37,6 @@
             <strong>{{ error|escape }}</strong>
         </span>
         {%endfor%}<br>
-
-       
-    
      
         <label for="{{ form.name.id_for_label }}">Legal Name:</label>
         {{ form.Legal_name }}
@@ -120,25 +117,27 @@
   
       <input type="submit" name="commit" value="Create my account" class="btn-xl btn-primary btn-wrap-text" data-disable-with="Create my account" />
       {% if messages%}
-      <ul class="messages">
+        <ul class="messages">
           {% for message in messages %}
-          <div class="container-fluid p-0">
+            <div class="container-fluid p-0">
               <div class="row">
-                  {% comment %} <div class="col-sm-2">
-              <div class="image_check"><img src="/static/image/check.jpg"></div></div> {% endcomment %}
-              {%if "logout" in message.tags%}
-              
-              <div class="col-sm-12 padding-box"><div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-                  {% comment %} <div class="image_check"><img src="/static/image/download.png"></div>
-                  <center>{{ message }}</center>  {% endcomment %}
-
-                  <div class="image_check"><img src="/static/image/pics.png"><center>{{ message }}</center> </div>
-
-                  {%endif%}
-                  {% endfor %}
-      </ul> 
-        {%endif%} 
-      </form>  </div>
+                {%if "logout" in message.tags%}
+                <div class="col-sm-12 padding-box">
+                  <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+                      <div class="image_check">
+                        <img src="/static/image/pics.png">
+                        <p class="text-center">{{ message }}</p> 
+                      </div>
+                  </div>
+                </div>
+                {%endif%}
+              </div>
+            </div>
+          {% endfor %}
+        </ul> 
+      {%endif%} 
+      </form>  
+    </div>
 </div>
    
 <!-- Here starts the code copied directly from the MaxCDN section of this page: https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp -->

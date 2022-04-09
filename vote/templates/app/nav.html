@@ -17,32 +17,26 @@
                <span class="icon-bar"></span>
              </button>
            </div>
-           {% comment %} {% if user == request.user %} {% endcomment %}
-            {% comment %} <li><a href="/">Home</a></li>
-           <li><a href="/login">Logout</a></li> {% endcomment %}
-           {% comment %} {%else%} {% endcomment %}
+        
            
            <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
                id="bs-example-navbar-collapse-1">
             {% if user.is_authenticated %}
              
              <li><a href="/show">My Voter Page</a></li>
-             
              <li><a href="/help">Help</a></li>
              <li><a href="/logout">Logout</a></li>
-             {% comment %} <li><a href="/member">Members</a></li> {% endcomment %}
-             <img src="{% static 'image/user.png' %}" alt="..." class="img-circle profile_img" height="40px">{{request.user.name}}</li>
+                <img src="{% static 'image/user.png' %}" alt="..." 
+                class="img-circle profile_img" height="40px">
+                {{request.user.name}}
+            </li>
             
             {%else%}
             <li><a href="/">Home</a></li>
             <li><a href="/help">Help</a></li>
             <li><a href="/login">Login</a></li>
-           </ul>
-           {% endif %}
+            {% endif %}
+          </ul>
         </nav>
-
-
-
-
     </div>
 </header>

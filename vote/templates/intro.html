@@ -3,31 +3,7 @@
 
 {%block content%}
 
-<header class="navbar navbar-inverse " style="border-radius: 0px;">
-    <div class="container header_container rounded-0"> 
-      <nav>
-        <div class="navbar-header">
-          <a id="logo" href="/">DSU</a>
-           <button type="button" class="navbar-toggle collapsed"
-               data-toggle="collapse"
-               data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-             </button>
-           </div>
-    
-           <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
-               id="bs-example-navbar-collapse-1">
-            <li><a href="/">Home</a></li>
-            <li><a href="/help">Help</a></li>
-            <li><a href="/login">Login</a></li>
-           </ul> 
-        </nav>
-    </div>
-</header>
+{% include 'app/nav.html' %}
 
 <div class="container">
     <div class="row">
@@ -41,6 +17,10 @@
                 you signed up.
             </p>
             <p class="text-center"><strong>{{entry_code}}</strong></p>
+            <br>
+            <p class="text-center">
+                <a href="/show" class="btn btn-primary">Take me to my Voter Page</a>
+            </p>
         </div>
         <div class="col col-md-3"></div>
     </div>

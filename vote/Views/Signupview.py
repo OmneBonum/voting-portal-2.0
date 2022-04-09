@@ -25,7 +25,7 @@ def index(request):
 
 def entry_code_test(request):
     
-    return HttpResponse(entry_code_generator())
+    return render(request, 'intro.html')
 
 def entry_code_generator():
     import random
@@ -81,8 +81,8 @@ def create(request):
             email.send()
             a=user.objects.filter(created_at__lte=datetime.now()-timedelta(minutes=10),registered=1).exists()
           
-            messages.success(request,"Thanks for registering with us. Please confirm your email address to complete the registration.",extra_tags='logout')
-            return redirect('/create')
+            messages.success(request,"Thanks for registering with us. Please confirm your email address to complete the registration.",extra_tags='success')
+            return render(request, 'signup/signUpConfirm.html')
 
         else:
             return render(request,"signup/create.html",{'form':accountform})
@@ -104,7 +104,7 @@ def activate(request, uidb64, token):
         print("user",users)
     if users is not None and account_activation_token.check_token(users, token):
         users.is_active = user.objects.filter(id=uid).update(is_active=True)
-        # login(request, users)
+        login(request, users)
        
         # messages.success(request,"Successfully Registered")
         return render(request, 'intro.html', {'entry_code':users.get_entry_code()})

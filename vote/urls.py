@@ -43,6 +43,7 @@ urlpatterns = [
     path('member',memberview.memberIndex,name="member_index"),
 
     path('entry-code', Signupview.entry_code_test),
+    
     # signup urls  
     path("create",Signupview.create,name='signupcreate'),
     path("update/<int:id>",Signupview.update,name='signupupdate'),
