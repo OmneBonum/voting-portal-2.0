@@ -137,7 +137,7 @@ h2.text-center.Pod_number {
       <div class="Pod_section">
         
         <h2 class="text-center Pod_number"> Housekeeping Page</h2>         
-        <h1><center>Pod: {{key1.id}}th &nbsp District: {{obj|upper}}</center></h1>       
+        <h1><center>Pod: {{key1.group_key}} &nbsp District: {{obj|upper}}</center></h1>       
         <div class="container section_container">
           <h2 class="text-center Pod_number">First Delegate:
             {% for item in all%}
@@ -147,7 +147,7 @@ h2.text-center.Pod_number {
             <h1 class="as"><center>Votes_count: {{count_obj}}</center></h1>
             <h1 class="asa"><center>Elect_count: {{elect_obj}}</center></h1>
             {%endcomment%}
-            
+
             {%endfor%}
 
             {%if owner_id == request.user.id%}

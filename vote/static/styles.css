@@ -261,23 +261,13 @@ input[type=text], select {
   background-color: #45a049;
   }
 
-  /* div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  } */
-
-  
-
-
-
   button.btn.vote {
     background: #008000 !important;
     color: #ffffff !important;
     font-size: 14px;
     margin-left: 20px;
     position: relative;
-    top: -16px;
+    /* top: -16px; */
 }
 
 .padding-box{
