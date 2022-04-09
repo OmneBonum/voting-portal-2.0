@@ -72,8 +72,9 @@ generatePss.addEventListener('click', (Event)=>{
   let  pass = generatePassword();
   // add the generated password into password input field as well
    document.querySelector("input[name='password']").value = pass;
+   document.querySelector("input[name='confirmation']").value = pass;
    document.querySelector("input[name='password']").type='text';
-   document.getElementById('basic-addon2').innerHTML = 'hide';
+   document.getElementById('basic-addon2').innerHTML = 'Hide';
 })
 function generatePassword() {
   var length = 8,
@@ -93,9 +94,9 @@ show.addEventListener('click', function(event){
   let inpt = document.querySelector("input[name='password']");
   if (inpt.type === "password") {
     inpt.type = "text";
-    event.target.innerHTML = 'hide';
+    event.target.innerHTML = 'Hide';
   } else {
     inpt.type = "password";
-    event.target.innerHTML = 'show';
+    event.target.innerHTML = 'Show';
   }
 })

@@ -143,8 +143,11 @@ h2.text-center.Pod_number {
             {% for item in all%}
               {{item.group_owner.name}}
           </h2>
+            {%comment%}
             <h1 class="as"><center>Votes_count: {{count_obj}}</center></h1>
             <h1 class="asa"><center>Elect_count: {{elect_obj}}</center></h1>
+            {%endcomment%}
+            
             {%endfor%}
 
             {%if owner_id == request.user.id%}
@@ -183,8 +186,7 @@ h2.text-center.Pod_number {
             <tr>
             <th>Member ID</th>
             <th>Name </th>
-            <th>Email</th>
-            <th>District </th>
+          
             <th>Votes</th> 
             <th>Devote</th>
             <th>Election</th>   
@@ -201,34 +203,29 @@ h2.text-center.Pod_number {
             <td>{{0}}{{forloop.counter}}
             {%endif%}
             
-            <td>{{users_list.member.name }}</td>  
-            <td>{{users_list.member.email }}</td>  
-            <td>{{users_list.member.district }}</td> 
-        
-                      
-              <td>
-                {% if  votegive == 0 and users_list.member_status == 0 %}
-                  <button type="submit" class="btn vote" name="submit"  value={{users_list.id}}>vote now</button>       
-                {% endif  %}
-              </td>
-              <td>
-                {% if  devote != 0 and  users_list.member_status == 0%}
-                <button type="submit" class="btn vote" name="devote"  value={{users_list.id}}>Remove vote</button>
-                {%endif%}
+            <td>{{users_list.member.name }}</td>
+            <td>
+              {% if  votegive == 0 and users_list.member_status == 0 %}
+                <button type="submit" class="btn vote" name="submit"  value={{users_list.id}}>vote now</button>       
+              {% endif  %}
+            </td>
+            <td>
+              {% if  devote != 0 and  users_list.member_status == 0%}
+              <button type="submit" class="btn vote" name="devote"  value={{users_list.id}}>Remove vote</button>
+              {%endif%}
+            </td>
 
-              </td>
-
-              <td>
-                {% if  podlen >= 5 and users_list.member_status == 1 and evote == 0 %}
-                  <button type="submit" name="elect" value={{users_list.id}}>Election</a></button>
-                {% endif  %}
-              </td>
-              
-              <td>
-                {% if  users_list.member_status == 0 and owner_id == request.user.id %}
-                  <button type="submit" class="delete" name="Delete" value={{users_list.id}}>Delete</button>  
-                {% endif  %}
-              </td>    
+            <td>
+              {% if  podlen >= 5 and users_list.member_status == 1 and evote == 0 %}
+                <button type="submit" name="elect" value={{users_list.id}}>Election</a></button>
+              {% endif  %}
+            </td>
+            
+            <td>
+              {% if  users_list.member_status == 0 and owner_id == request.user.id %}
+                <button type="submit" class="delete" name="Delete" value={{users_list.id}}>Delete</button>  
+              {% endif  %}
+            </td>    
 
             {%endfor%}
 

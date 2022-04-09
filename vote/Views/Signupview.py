@@ -81,7 +81,7 @@ def create(request):
             email.send()
             a=user.objects.filter(created_at__lte=datetime.now()-timedelta(minutes=10),registered=1).exists()
           
-            messages.success(request,"Thanks for registering with us. Please confirm your email address to complete the registration.",extra_tags='success')
+            messages.success(request,"We've sent an email to the address you provided. Open it and click on the link to confirm and Enter the Floor.",extra_tags='success')
             return render(request, 'signup/signUpConfirm.html')
 
         else:

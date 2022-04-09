@@ -76,10 +76,6 @@
         {%endfor%}<br>
         
 
-        {% comment %} <label for="{{ form.executed_on.id_for_label }}">Executed on:</label>
-        {{form.executed_on}} {% endcomment %}
-     
-
         {% for error in form.executed_on.errors %}
         <span class="error text-danger">
             <strong>{{ error|escape }}</strong>
@@ -92,7 +88,7 @@
           class="form-control" id="id_password" 
           style="margin-top:0" placeholder="Enter your password"
           aria-describedby="basic-addon2">
-          <span class="input-group-addon" id="basic-addon2">show</span>
+          <span class="input-group-addon" id="basic-addon2">Show</span>
         </div>
         
 
