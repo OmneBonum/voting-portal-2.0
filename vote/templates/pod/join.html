@@ -1,3 +1,4 @@
+{% load static %}
 {%include "app/header.html"%}
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"  crossorigin="anonymous">
  
 
 <style>
@@ -67,60 +68,70 @@ tbody {
 }
 
 </style>
+
 </head>
 <body>
-<div class="container mt-5">
-<div class="center_box">
+  <div class="container mt-5">
+    <div class="center_box">
 
-<h1 class="text-center">Join a Pod</h1>
-<div class="section_text_box">
-<h4 class="text-left">You must have an Invitation Key to join a Pod.</h4>
-<p class="text-left">The First Delegate of a pod should send you an Invitation Key. This cannot be done via the website.</p>
-<p class="text-left">Or you can create your own Pod and start inviting others to join it.</p>
-</div>
-<fieldset>
+      <h1 class="text-center">Join a Pod</h1>
+      <div class="section_text_box">
+        <h4 class="text-left">You must have an Invitation Key to join a Pod.</h4>
+        <p class="text-left">The First Delegate of a pod should send you an Invitation Key. This cannot be done via the website.</p>
+        <p class="text-left">Or you can create your own Pod and start inviting others to join it.</p>
+      </div>
+      <fieldset>
 
+        <h1>{{disti}}</h1>
+        <div class="text-left section_lable_Input_Pod">
+          <form action="" method="POST" novalidate>
+              {% csrf_token %}
+              
+              <label for="POD">Enter Pod_key</label>
+              <input class="form-control" type="text" name="pod_key" id="pod_key" />
+            
+              {% if messages%}
+                <ul class="messages">
+                  {% for message in messages %}
+                  <div class="container-fluid p-0">
+                      <div class="row">
+                      {%if "invalid" in message.tags%}
+                      <div class="col-sm-12">
+                        <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+                            <center>{{ message }}</center> 
+                        </div>
+                      </div>
+                      {%endif%}
+                      {%if "don" in message.tags%}
+                      <div class="col-sm-12">
+                        <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+                          <center>{{ message }}</center> 
+                        </div>
+                      </div>
+                      {%endif%}  
 
-  <h1>{{disti}}</h1>
-<div class="text-left section_lable_Input_Pod">
-<form action="" method="POST" novalidate>
-    {% csrf_token %}
-    
-    <label for="POD">Enter Pod_key</label>
-    <input class="form-control" type="text" name="pod_key" id="pod_key" />
-   
-
-    {% if messages%}
-    <ul class="messages">
-        {% for message in messages %}
-        <div class="container-fluid p-0">
-            <div class="row">
-               
-            {%if "invalid" in message.tags%}
-            <div class="col-sm-12"><div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-               
-                <center>{{ message }}</center> 
-                {%endif%}
-                {%if "don" in message.tags%}
-                <div class="col-sm-12"><div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-                   
-                    <center>{{ message }}</center> 
-                    {%endif%}  
-                  {%if "user" in message.tags%}
-                  <div class="col-sm-12"><div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-                       
-                    <center>{{ message }}</center> 
-                    {%endif%}    
-                {% endfor %}
-    </ul> 
-         {%endif%}
-    
-   
-    <input type="submit" name="commit" value="Join the pod" class="btn-xl btn-primary" data-disable-with="Enter the Floor" />
-</form> 
- </div>
-</div>
-</div>
-</div>
+                      {%if "user" in message.tags%}
+                      <div class="col-sm-12">
+                        <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
+                          <center>{{ message }}</center> 
+                        </div>
+                      </div>
+                      {%endif%}    
+                    {% endfor %}
+                    </div>
+                  </div>
+                </ul> 
+              {%endif%}
+            
+              <input type="submit" 
+                name="commit" 
+                value="Join the pod" 
+                class="btn-xl btn-primary" 
+                data-disable-with="Enter the Floor" />
+          </form> 
+        </div>
+      </fieldset>
+    </div>
+  </div>
 </body>
 </html>

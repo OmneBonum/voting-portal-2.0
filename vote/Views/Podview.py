@@ -84,18 +84,12 @@ def validate(request):
          
           uname= request.POST.get('pod_key')
           print("unames",uname)
-          # if  pod_groups.objects.exclude(=True).filter(group_key=uname):
-          #      messages.error(request,"s key ",extra_tags="invalid")
-               
+
           ma=pod_groups.objects.filter(group_key=uname).select_related("group_owner")
           
           for i in ma:
-          
                Dist_obj=i.group_owner.district
-  
                if pod_groups.objects.filter(group_key =uname).exists():
-                    
-                  
                     if pod_groups.objects.filter(group_key=uname).exists() and  Dist_obj==hello:
                          print("key")
                          key1=pod_groups.objects.filter(group_key=uname)
@@ -108,19 +102,18 @@ def validate(request):
                          current_user=request.user.id
                          join.member_id=current_user
                          join.group_id=z    
-                         print("nkbb",join.group_id)
+                         print("joing.group_id: ",join.group_id)
                          join.member_status=0
                          a=len(pod_groups_members.objects.filter(group_id=z))
-                         print("aaaaaaaaaaaa",a)
+                         print("length of pod member: ",a)
                          if a >= 2:
                              
                              messages.error(request,"Sorry, this Pod is full!",extra_tags="don") 
                              
                          else:
                               join.save()
-                              return redirect('/show')
-                      
-
+                              return redirect('vote:key2', id = i.id)
+                    
                     elif Dist_obj!=hello:     
                          print("district")
                          messages.error(request,"Your Invitation Key is invalid or expired. Please contact--in real life--the Delegate for the group you are trying to join to get a valid key.",extra_tags="user") 
