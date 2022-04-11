@@ -97,19 +97,28 @@ WSGI_APPLICATION = 'Voting_portal.wsgi.application'
 # else:
 #     # change to the new production db
 
-#     DATABASES = {
-#     'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
 
 DATABASES = {
 'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':  'dsuDev',
+        'USER': 'dsuser',
+        'PASSWORD': 'D123123d',
+        'HOST': 'dsu.cejeagvrpg3r.us-east-1.rds.amazonaws.com',
+        'PORT': '3306'
     }
 }
+# DATABASES = {
+# 'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':  'DSU',
+#         'USER': 'root',
+#         'PASSWORD': 'Z123123z',
+#         'HOST': 'localhost',
+#         'PORT': '3306'
+#     }
+# }
+
 
 
 # Password validation
