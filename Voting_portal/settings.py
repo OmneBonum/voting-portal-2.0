@@ -83,27 +83,35 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Voting_portal.wsgi.application'
-# DATABASES = {
-# 'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME':  'dsuDev',
-#         'USER': 'dsuser',
-#         'PASSWORD': 'D123123d',
-#         'HOST': 'dsu.cejeagvrpg3r.us-east-1.rds.amazonaws.com',
-#         'PORT': '3306'
-#     }
-# }
 
-DATABASES = {
-'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'DSU',
-        'USER': 'root',
-        'PASSWORD': 'Z123123z',
-        'HOST': 'localhost',
-        'PORT': '3306'
+
+# user the environ variable to check if it's on production db or not
+# json.loads("true".lower()) // returns true or false of string. 
+import json
+if json.loads(os.environ.get('PRODUCTION').lower()):
+    # production 
+    DATABASES = {
+    'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME':  'dsuDev',
+            'USER': 'dsuser',
+            'PASSWORD': 'D123123d',
+            'HOST': 'dsu.cejeagvrpg3r.us-east-1.rds.amazonaws.com',
+            'PORT': '3306'
+        }
     }
-}
+else:
+    # localhost
+    DATABASES = {
+    'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME':  'DSU',
+            'USER': 'root',
+            'PASSWORD': 'Z123123z',
+            'HOST': 'localhost',
+            'PORT': '3306'
+        }
+    }
 
 
 
@@ -154,15 +162,6 @@ MEDIA_URL = '/media/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'democracy.straight.up+s@gmail.com'
-# EMAIL_HOST_PASSWORD = 'zdlybdgqqrchgyfd'
-# EMAIL_PORT = 587
-
-
 EMAIL_BACKEND       = os.environ.get('EMAIL_BACKEND')
 EMAIL_HOST          = os.environ.get('EMAIL_HOST')
 EMAIL_HOST_USER     = os.environ.get('EMAIL_HOST_USER')
