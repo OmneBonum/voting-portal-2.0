@@ -92,12 +92,12 @@ if json.loads(os.environ.get('PRODUCTION').lower()):
     # production 
     DATABASES = {
     'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME':  'dsuDev',
-            'USER': 'dsuser',
-            'PASSWORD': 'D123123d',
-            'HOST': 'dsu.cejeagvrpg3r.us-east-1.rds.amazonaws.com',
-            'PORT': '3306'
+            'ENGINE': os.environ.get('DB_ENGINE'),
+            'NAME':  os.environ.get('DB_NAME'),
+            'USER': os.environ.get('DB_USER'),
+            'PASSWORD': os.environ.get('DB_PASSWORD'),
+            'HOST': os.environ.get('DB_HOST'),
+            'PORT': os.environ.get('DB_PORT')
         }
     }
 else:
