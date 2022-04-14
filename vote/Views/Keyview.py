@@ -12,6 +12,8 @@ from django.urls import reverse
 from django.http import HttpResponse,HttpResponseRedirect
 from django.db.models import F
 from django.db.models import Count
+from django.contrib.auth.decorators import login_required
+
 
 
 def index(request):
@@ -58,6 +60,7 @@ def key_generator(request):
            
     return render(request,"key/key.html",{'user':user,'is_key_generate':1,'a':0,"z":z})
 
+@login_required(login_url = '/login')
 def show(request,id):
     elect_obj=pod_groups_members.objects.filter(member_id=request.user.id).values_list("elect_count",flat=True)[0]
     print("1010",elect_obj)
@@ -97,7 +100,7 @@ def show(request,id):
     print("user: ",dist)
     users = pod_groups.objects.filter(id=key1.id) 
     if not request.user.is_authenticated:
-      return redirect("/")
+      return redirect("/login")
 
     usert = pod_groups.objects.filter(group_owner_id=request.user)
     k=usert.values_list('group_owner_id',flat=True)
@@ -205,6 +208,6 @@ def show(request,id):
             print(i.member.id)
             mem.group_owner_id=pod_groups.objects.filter(group_owner=i.group.group_owner_id).update(group_owner=i.member.id)     
         return redirect(request.path_info)   
-    return render(request,"key/key.html",{'user':users,'key1':key1,'stat':status,'is_key_generate':0,'podlen':podlength,"owner_id":owner_id,'all':all,'votegive':hell,"evote":evote,'q':0,"devote":devotee,'count_obj':count_obj,"elect_obj":elect_obj,"obj":dist}) 
+    return render(request,"key/key.html",{'users':users,'key1':key1,'stat':status,'is_key_generate':0,'podlen':podlength,"owner_id":owner_id,'all':all,'votegive':hell,"evote":evote,'q':0,"devote":devotee,'count_obj':count_obj,"elect_obj":elect_obj,"obj":dist}) 
  
     

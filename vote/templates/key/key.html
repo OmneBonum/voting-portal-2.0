@@ -1,212 +1,76 @@
+{% extends 'app/base.html' %}
 {% load static %}
-{%include "app/foot.html" %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <title>Pod Creation Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  
-  
- <style>
-
-a#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-ul#bs-example-navbar-collapse-1 a {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: sans-serif;
-}
-ul.nav-item {
-    display: inline-flex;
-}
-
-ul.nav-item li a {
-  color: #555555;
-  font-size: 16px;
-}
-ul.nav-item li {
-    list-style: none;
-    margin-left: 15px;
-}
- 
-
-ul#bs-example-navbar-collapse-1 {
-  color: white;
-  font-size: 22px;
-}
-.container.header_container {
-  display: block !important;
-}
 
 
-ul#bs-example-navbar-collapse-1 {
-  color: white;
-  font-size: 22px;
-}
+{%block css%}
+{%endblock css%}
 
-.container.section_container {
-  max-width: 1200px;
-}
+{%block content%}
 
-h2.text-center.Pod_number {
-  font-size: 32px;
-}
-
-
-
-
-.Pod_section p {
-  font-size: 18px !important;
-  color: #001687 !important;
-}
-
-.btn-success {
-  color: #fff;
-  background-color: #28a745 !important;
-  border-color: #28a745 !important;
-  font-size: 16px !important;
-}
-.Pod_section p {
-  font-size: 18px !important;
-  color: #ff0000 !important;
-  font-weight: 600 !important;
-}
-
-
-
-
-
-.btn.vote {
-  border: 1px solid #0050a6;
-  background: #0069d9;
-  color: #fff;
-  font-size: 14px;
-  border-radius: 5px;
-}
-
-
-.delete {
-  background: #0069d9;
-  border: 2px solid #0069d9;
-  color: #fff;
-  border-radius: 5px;
-  padding: 3px 7px;
-}
-
-
-.as {
-  color: #e7340b;
-}
-
-
-.asa {
-  color: #1b4ec1;
-}
-/*7-feb-2022 css end */
-
-
-
-
-
- </style> 
-  
-</head>
-<body>
-	
-
- 
-  
-  <form class="form-horizontal form-label-left" method="POST" novalidate>
-      {% csrf_token %}
-      <div class="Pod_section">
-        
-        <h2 class="text-center Pod_number"> Housekeeping Page</h2>         
-        <h1><center>Pod: {{key1.group_key}} &nbsp District: {{obj|upper}}</center></h1>       
-        <div class="container section_container">
-          <h2 class="text-center Pod_number">First Delegate:
-            {% for item in all%}
-              {{item.group_owner.name}}
-          </h2>
-            {%comment%}
-            <h1 class="as"><center>Votes_count: {{count_obj}}</center></h1>
-            <h1 class="asa"><center>Elect_count: {{elect_obj}}</center></h1>
-            {%endcomment%}
-
-            {%endfor%}
-
-            {%if owner_id == request.user.id%}
-                <p class="text-center ">Pod Invitation Key is:
-                  {% for item in user %}
-                    <span class="m-1" > 
-                      <span id="key_idss">{{item.group_key}}</span>
-                      <img id="copy_invitation_key" title="copy invitation key" src="{%static 'image/copy-solid.svg' %}" 
-                      style="margin-left: 10px; margin-right: 10px;" 
-                      width="15" alt="copy code">
-                    </span>
-                    <span style="position: absolute;" class="text-success" id="copied"></span>
-                  {%endfor%}
-                </p>
-            {%endif%}
-          
-              <button type="button" class="close" aria-label="Close">
-              <span aria-hidden="true"></span>
-            </button></p>
-          
-        </div>
-        <div class="btn_section text-center mb-5">
+{%include 'app/nav.html' %}
+<form class="form-horizontal form-label-left" method="POST" novalidate>
+  {% csrf_token %}
+  <div class="Pod_section">
     
-          {% if  owner_id == request.user.id%}
-            <button id="send" type="submit" name="hello"  class="btn btn-success">Update Key</a></button>
-            <a class="btn btn-success" href="/member">Members</a>
-          {%elif is_key_generate == 1%}
-            <button id="send_generate_key" type="submit" name="hello" class="btn btn-success">Generate Key</a></button> 
-           
-          {% endif  %}  
-        
-        </div>
-        
+    <h2 class="text-center Pod_number"> Housekeeping Page</h2>         
+    <h2 class="text-center">
+      <p>Pod: {{key1.group_key}} &nbsp District: {{obj|upper}}</p>
+    </h2>       
+    <div class="container">
+      <h2 class="text-center Pod_number">First Delegate:
+        {% for item in all%}
+          {{item.group_owner.name}}
+        {%endfor%}
+      </h2>
+        {%if owner_id == request.user.id%}
+            <p class="text-center ">Pod Invitation Key is:
+              {% for item in users %}
+                <span class="m-1" > 
+                  <span id="key_idss">{{item.group_key}}</span>
+                  <img id="copy_invitation_key" title="copy invitation key" src="{%static 'image/copy-solid.svg' %}" 
+                  style="margin-left: 10px; margin-right: 10px;" 
+                  width="15" alt="copy code">
+                </span>
+                <span style="position: absolute;" class="text-success" id="copied"></span>
+              {%endfor%}
+            </p>
+        {%endif%}
+    </div>
+
+    <div class="btn_section text-center mb-5">
+      {% if  owner_id == request.user.id%}
+        <button id="send" type="submit" name="hello"  class="btn btn-success">Update Key</button>
+        <a class="btn btn-success" href="/member">Members</a>
+      {%elif is_key_generate == 1%}
+        <button id="send_generate_key" type="submit" name="hello" class="btn btn-success">Generate Key</button> 
+      {% endif  %}  
+    </div>
+    
+    <div class="container">
+      <div class="row" style="overflow: auto; display: block; white-space: nowrap;">
         <table class="table table-bordered table-sm">
           <thead>
             <tr>
-            <th>Member ID</th>
-            <th>Name </th>
-          
-            <th>Votes</th> 
-            <th>Devote</th>
-            <th>Election</th>   
-            <th>delete</th>  
-                              
+              <th>Member ID</th>
+              <th>Name </th>
+              <th>Votes</th> 
+              <th>Devote</th>
+              <th>Election</th>   
+              <th>delete</th>              
             </tr>
           </thead>  
         
           <tbody>     
             {% for users_list in stat%}    
-            
           <tr>  
             {%if forloop.counter < 10%}
             <td>{{0}}{{forloop.counter}}
             {%endif%}
             
             <td>{{users_list.member.name }}</td>
-            <td>
+            <td class="text-center">
               {% if  votegive == 0 and users_list.member_status == 0 %}
-                <button type="submit" class="btn vote" name="submit"  value={{users_list.id}}>vote now</button>       
+                <button type="submit" class="btn btn-sm btn-success vote" name="submit"  value={{users_list.id}}>vote now</button>       
               {% endif  %}
             </td>
             <td>
@@ -214,27 +78,33 @@ h2.text-center.Pod_number {
               <button type="submit" class="btn vote" name="devote"  value={{users_list.id}}>Remove vote</button>
               {%endif%}
             </td>
-
+  
             <td>
               {% if  podlen >= 5 and users_list.member_status == 1 and evote == 0 %}
-                <button type="submit" name="elect" value={{users_list.id}}>Election</a></button>
+                <button type="submit" name="elect" value={{users_list.id}}>Election</button>
               {% endif  %}
             </td>
             
-            <td>
+            <td class="text-center">
               {% if  users_list.member_status == 0 and owner_id == request.user.id %}
-                <button type="submit" class="delete" name="Delete" value={{users_list.id}}>Delete</button>  
+                <button type="submit" class="btn btn-danger btn-sm delete" name="Delete" value={{users_list.id}}>Delete</button>  
               {% endif  %}
             </td>    
-
+  
             {%endfor%}
-
-          
+  
           </tbody>
         </table>
-	    </div>
-  </form>
-	
-  <script src="{% static 'pod_invitationKeyCopy.js' %}"></script>
-</body>
-</html>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+{%endblock content%}
+
+{%block js%}
+<script src="{% static 'pod_invitationKeyCopy.js' %}"></script>
+
+{%endblock js%}
+

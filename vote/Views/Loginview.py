@@ -48,6 +48,7 @@ def index(request):
         return render(request,"app/index.html",{'f':0})  
     return render(request,"app/index.html",{'f':0})  
 
+
 def user_login(request):
     if request.method == "POST":
         

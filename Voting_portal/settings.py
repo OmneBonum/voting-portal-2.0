@@ -29,6 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 from django.contrib.messages import constants as messages
+
 MESSAGE_TAGS = {
         messages.DEBUG: 'alert-secondary',
         messages.INFO: 'alert-info',
@@ -37,7 +38,7 @@ MESSAGE_TAGS = {
         messages.ERROR: 'alert-danger',
  }
 
-ALLOWED_HOSTS = ['127.0.0.1', 'dsup.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'dsup.herokuapp.com', '192.168.1.180']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -82,42 +83,27 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Voting_portal.wsgi.application'
-
-
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-# check weather we are in local host or not
-# if not eval(os.environ.get('PRODUCTION')):
-#     DATABASES = {
-#     'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
+# DATABASES = {
+# 'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME':  'dsuDev',
+#         'USER': 'dsuser',
+#         'PASSWORD': 'D123123d',
+#         'HOST': 'dsu.cejeagvrpg3r.us-east-1.rds.amazonaws.com',
+#         'PORT': '3306'
 #     }
-# else:
-#     # change to the new production db
-
+# }
 
 DATABASES = {
 'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'dsuDev',
-        'USER': 'dsuser',
-        'PASSWORD': 'D123123d',
-        'HOST': 'dsu.cejeagvrpg3r.us-east-1.rds.amazonaws.com',
+        'NAME':  'DSU',
+        'USER': 'root',
+        'PASSWORD': 'Z123123z',
+        'HOST': 'localhost',
         'PORT': '3306'
     }
 }
-# DATABASES = {
-# 'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME':  'DSU',
-#         'USER': 'root',
-#         'PASSWORD': 'Z123123z',
-#         'HOST': 'localhost',
-#         'PORT': '3306'
-#     }
-# }
 
 
 

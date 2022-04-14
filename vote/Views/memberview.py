@@ -24,26 +24,18 @@ def memberIndex(request):
         q = request.POST.get('subm')
         print("querty",q[0])
         member.text_status=pod_groups_members.objects.filter(member_id=q[0]).update(member_comment=quer)
+        
     if firstdel_groups_members.objects.filter(member_id=request.user.id): 
         if seconddel_groups_members.objects.filter(member_id=request.user.id): 
             if thirddel_groups_members.objects.filter(member_id=request.user.id): 
                 if fourthdel_groups_members.objects.filter(member_id=request.user.id):
                     if fifthdel_groups_members.objects.filter(member_id=request.user.id): 
                         if sixthdel_groups_members.objects.filter(member_id=request.user.id): 
-
-                            
                             return render(request,"pod/data.html",{'context':user_obj,"u":0}) 
-
-
                     return render(request,"pod/data.html",{'context':user_obj,"y":0}) 
- 
-
                 return render(request,"pod/data.html",{'context':user_obj,"t":0})
-
             return render(request,"pod/data.html",{'context':user_obj,"e":0})
-
         return render(request,"pod/data.html",{'context':user_obj,"w":0})
-
     return render(request,"pod/data.html",{'context':user_obj,"q":0})
 
 

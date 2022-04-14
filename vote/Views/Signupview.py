@@ -18,14 +18,17 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.contrib.auth import authenticate, login,logout
 from django.contrib.auth import get_user_model
 from datetime import datetime, timedelta
+from django.contrib.auth.decorators import login_required
+
+
 
 def index(request):   
     context = {'user_list':user.objects.all()}
     return render(request,"pod/p.html",context) 
 
 def entry_code_test(request):
-    
     return render(request, 'intro.html')
+
 
 def entry_code_generator():
     import random
@@ -113,6 +116,8 @@ def activate(request, uidb64, token):
         return HttpResponse('Activation link is invalid!')
 
 
+
+@login_required(login_url = '/login')
 def update(request,id):
     users = user.objects.get(id=id)
     # print(users)

@@ -1,96 +1,91 @@
+{% extends 'app/base.html'%}
 {% load static %}
-{%include "app/header.html" %}
-<title>Login</title>
-  <body>
-  
-  <!-- <header class="navbar navbar-fixed-top navbar-inverse"> 
 
-  <div class="container"> 
-    <a id="logo" href="/">dsu</a>
-    <nav>
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed"
-                data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-                aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
-          id="bs-example-navbar-collapse-1">
-        <li><a href="/">Home</a></li>
-        <li><a href="/help">Help</a></li>
-          <li><a href="/login">Log in</a></li>
-      </ul>
-    </nav>
+{% block css%}
+{% endblock css%}
+
+{% block content%}
+{% include 'app/nav.html' %}
+<div class="container">
+  <!-- the info text area -->
+  <h1 class="text-center mt-5">Enter The Floor</h1>
+  <div class="row text-center ">
+    <div class="col col-sm-12 ">
+      <p >If you haven't done so already, to Enter the Floor, you must first</p>  
+      <a class="btn btn-primary mb-3" href="create">Claim Your Seat</a>
+      <p >If you've already Claimed Your Seat, Enter the Floor:</p>
+    </div>
+    
   </div>
-</header> -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
- 
-    <div class="container Enter_the_Floor">
-      <h1 class="text-center sec_Enter">Enter the Floor</h1>
-<div class="center jumbotron If_already">
-<p class="pad already">If you haven't done so already, to Enter the Floor, you must first</p>  
-<p class="pad"></p>
-<a class="btn-xl btn-primary" href="create">Claim Your Seat</a>
+  <!-- the form login area -->
+  <div class="row">
+    <div class="col-sm-12 col-md-3 col-lg-4" ></div>
+    <div class="col col-sm-12 col-md-6 col-lg-4">
+      <form class="form " method="POST" novalidate>
+        {% csrf_token %}
+        <label for="">District - Entry Code</label>
+        <div class="row">
+          <div class="col">
+            <input class="form-control" maxlength="4"  placeholder="District" type="text" name="district" id="district" style="text-transform:uppercase" />
+          <span class="error text-danger hide" ></span>
 
-<p></p>
-<p class="pad"></p>
-<p class="pad already">If you've already Claimed Your Seat, Enter the Floor:</p>
+            <span style="position: absolute; top: 15px; right: -2px;">-</span>
+          </div>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <form class="form-horizontal " method="POST" novalidate>
-      {% csrf_token %}
-
-      
-      <label for="">District - Entry Code</label>
-      <div class="row">
-        <div class="col col-sm-6">
-          <input class="form-control" maxlength="4"  placeholder="District" type="text" name="district" id="district" style="text-transform:uppercase" />
-        <span class="error text-danger hide" ></span>
-
-          <span style="position: absolute; top: 15px; right: -2px;">-</span>
+          <div class="col">
+            <input class="form-control" maxlength="5" placeholder="Entry code" type="text" name="entry_code" id="entry_code" style="text-transform:uppercase" />
+          </div>
         </div>
-        <div class="col col-sm-6">
-          <input class="form-control" maxlength="5" placeholder="Entry code" type="text" name="entry_code" id="entry_code" style="text-transform:uppercase" />
+
+        <br>
+
+        <label for="session_password">Password</label>
+        <input class="form-control" type="password" name="password" id="password" />
+        
+
+        <div class="form-check">
+          <label class="checkbox inline" for="session_remember_me">
+            <input name="session[remember_me]" type="hidden" value="0" />
+            <input class="form-check-input" type="checkbox" value="1" name="session[remember_me]" id="session_remember_me" />
+             &nbsp&nbsp&nbsp<span>Remember me on this computer</span>
+          </label>  
         </div>
-      </div>
 
-      <label for="session_password">Password</label>
-      <input class="form-control" type="password" name="password" id="password" />
-      
-     
-      
-      <label class="checkbox inline" for="session_remember_me">
-        <input name="session[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="session[remember_me]" id="session_remember_me" />
-        &nbsp&nbsp&nbsp<span>Remember me on this computer</span>
-</label>      
+        <br><br>
 
-      <input type="submit" name="commit" value="Enter the Floor" class="btn-xl btn-primary" data-disable-with="Enter the Floor" />
-</form>  </div>
+        <input type="submit" name="commit" value="Enter the Floor" class="btn-xl btn-primary" data-disable-with="Enter the Floor" />
+      </form>  
+    </div>
+    <div class="col-sm-12 col-md-3 col-lg-4"></div>
+  </div>
+  
+  <!-- the messages area -->
+  <div class="row">
+    <div class="col col-sm-12 col-md-3 col-lg-4"></div>
+    <div class="col col-sm-12 col-md-6 col-lg-4">
+      {% if messages%}
+      <ul class="messages">
+          {% for message in messages %}
+          <div class="container-fluid p-0">
+            <div class="alert {{ message.tags }} alert-dismissible text-center" role="alert" >
+              <p>{{ message }}</p> 
+            </div>
+          </div>
+          {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="col col-sm-12 col-md-3 col-lg-4"></div>
+    
+  </div>
+
 </div>
-{% if messages%}
-<ul class="messages">
-    {% for message in messages %}
-    <div class="container-fluid p-0">
-      <div class="alert {{ message.tags }} alert-dismissible" role="alert" >
-    <center>{{ message }}</center> 
-    {% endfor %}
-</ul>
-{% endif %}
+
+{%include 'app/footer.html' %}
+{% endblock content%}
+
+{% block js%}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <script src="{% static 'signUpScript.js' %}"></script>
-
-
-{%include "app/footer.html" %}
-
-  </body>
-</html>
+{% endblock js%}

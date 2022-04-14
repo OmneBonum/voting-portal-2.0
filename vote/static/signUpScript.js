@@ -24,10 +24,10 @@ district.addEventListener('change', (event) => {
 });
 
 function validate_valid(e){
-  e.target.style.borderColor = 'green'
-  let errorField = e.target.nextElementSibling
-  errorField.innerHTML = `<strong>valid district!</strong>`
-  errorField.classList.add('hide')
+  e.target.style.borderColor = 'green';
+  let errorField = e.target.nextElementSibling;
+  errorField.innerHTML = ``;
+  errorField.classList.add('hide');
 }
 function validate_invalid(e){
   e.target.style.borderColor = 'red';
@@ -36,7 +36,6 @@ function validate_invalid(e){
   errorField.classList.remove('hide')
 }
 
-
 // check email for and formating and validate it on mouse leave
 
 var email = document.querySelector("input[name='email']");
@@ -44,15 +43,14 @@ email.addEventListener('change', (event)=>{
   let val = event.target.value;
   if(validateEmail(val) == null){
     event.target.style.borderColor = 'red';
-    let errorField = event.target.nextElementSibling
-    errorField.innerHTML = `<strong>Not a valid email address.</strong>`
-    errorField.classList.remove('hide')
-
+    let errorField = event.target.nextElementSibling;
+    errorField.innerHTML = `<strong>Not a valid email address.</strong>`;
+    errorField.classList.remove('hide');
   }else{
     event.target.style.borderColor = 'green';
-    let errorField = event.target.nextElementSibling
-    errorField.innerHTML = `<strong></strong>`
-    errorField.classList.add('hide')
+    let errorField = event.target.nextElementSibling;
+    errorField.innerHTML = `<strong></strong>`;
+    errorField.classList.add('hide');
   }
 })
 
@@ -68,6 +66,7 @@ const validateEmail = (email) => {
 const generatePss = document.getElementById('generatePassoword');
 
 generatePss.addEventListener('click', (Event)=>{
+
   // generate a password and show it on password labal
   let  pass = generatePassword();
   // add the generated password into password input field as well

@@ -1,34 +1,43 @@
+{%extends "app/base.html" %}
 {% load static %}
-{%include "app/header.html" %}
 
+{% block css %}
 <style>
   .textarea.form-control {
     height: 36px;
   }
-  </style>
-  <body>
- <title>Signup</title>
-<style> .user {
+  .user {
   text-transform: uppercase;
-}</style>
-    <div class="container Enter_the_Floor">
+}
+  </style>
+{% endblock css%}
 
-<div class="center If_already">
-  <h1 class="pad">Enter the Floor</h1>
+{%block content%}
+{%include 'app/nav.html'%}
+<div class="container Enter_the_Floor">
 
-<p class="claimed"> If you've already claimed your seat,<br>you can enter the floor of your District Legislature (D-Leg).<br><br></p>
-<a class="btn-xl btn-primary" href="/login">Enter the Floor</a>
-<p class="pad">Otherwise...</p>
-<h1 class="pad">Claim Your Seat</h1>
-<p class="claimed">Fill out the form below. <br><br>Note: Enter your district as your two-letter state postal code <br> followed by a two-digit number. For instance, <br>the third district in Alabama would be AL03.</p>
-</div>
+  <div class="center If_already">
+    <h1 class="pad">Enter the Floor</h1>
+      <p class="claimed"> If you've already claimed your seat,<br>
+        you can enter the floor of your District Legislature (D-Leg).
+        <br>
+      </p>
+      <a class=" btn btn-xl btn-primary" href="/login">Enter the Floor</a>
+      <p class="claimed mt-3">Otherwise...</p>
+      <h1 class="pad">Claim Your Seat</h1>
+      <p class="claimed">Fill out the form below. <br>
+        <strong>NOTE:</strong> Enter your district as your two-letter state postal code <br> 
+        followed by a two-digit number. For instance, <br>
+        the third district in Alabama would be AL03.
+      </p>
+  </div>
 
-<form class="form-horizontal form-label-left" method="POST" novalidate>
+  <form class="form-horizontal form-label-left mx-auto" method="POST" novalidate>
     {% csrf_token %}
       
-      <div class="row">
+      <div class="row d-flex justify-content-center">
         <input type="hidden">
-      <div class="col-md-6 col-md-offset-3" id="big-font">
+      <div class="col col-sm-12 col-md-6" id="big-font">
         <label for="{{ form.district.id_for_label }}">District:</label>
         {{ form.district }}
         <span class="error text-danger hide" ></span>
@@ -36,7 +45,7 @@
         <span class="error text-danger">
             <strong>{{ error|escape }}</strong>
         </span>
-        {%endfor%}<br>
+        {%endfor%}<br> <br>
      
         <label for="{{ form.name.id_for_label }}">Legal Name:</label>
         {{ form.Legal_name }}
@@ -82,13 +91,13 @@
         </span>
         {%endfor%}<br>
        
-        <label id="showPassword" for="{{ form.password.id_for_label }}">Password:</label>
+        <label for="{{ form.password.id_for_label }}">Password:</label>
         <div class="input-group">
           <input type="password" name="password" 
           class="form-control" id="id_password" 
-          style="margin-top:0" placeholder="Enter your password"
-          aria-describedby="basic-addon2">
-          <span class="input-group-addon" id="basic-addon2">Show</span>
+          style="padding: 5px 10px;" placeholder="Enter your password"
+          aria-describedby="basic-addon">
+          <span class="input-group-text" id="basic-addon2">Show</span>
         </div>
         
 
@@ -140,17 +149,16 @@
           {% endfor %}
         </ul> 
       {%endif%} 
-      </form>  
-    </div>
+  </form>  
 </div>
-   
 
 {%include "app/footer.html" %}
- 
+{%endblock content%}
+
+   
+{%block js%}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <script src="{% static 'signUpScript.js' %}"></script>
+{%endblock js%}
 
-  </body>
-</html>

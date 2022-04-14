@@ -236,10 +236,11 @@ a.btn.btn-primary.text-center.Creat_pod.My_pod {
   width: 50%;
   margin: 0 auto;
 }
+
 input[type=text], select {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 12px 20px; 
+  margin: 0px 0; 
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;

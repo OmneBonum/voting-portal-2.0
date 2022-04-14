@@ -11,8 +11,9 @@ from django.urls import reverse
 from django.shortcuts import get_object_or_404
 import random  
 import string
+from django.contrib.auth.decorators import login_required
 
-
+@login_required(login_url = '/login')
 def podshow(request):  
     
      all=pod_groups.objects.all()
@@ -64,6 +65,7 @@ def podshow(request):
      return render(request,'pod/home.html',{'a':a,'fpods':fpods,'pkey':bkey,'pod':all,al:'al',"obj":dist})
 
 
+@login_required(login_url = '/login')
 def validate(request):
      destic=user.objects.filter(id=request.user.id).values_list("district",flat=True)
      if user.objects.filter(id=request.user.id).exists():
@@ -77,20 +79,22 @@ def validate(request):
      else:
           print("not a district.")   
      if not request.user.is_authenticated:
-        return redirect("/")
+        return redirect("/login")
 
      if request.method =="POST":
           join=pod_groups_members()
          
           uname= request.POST.get('pod_key')
           print("unames",uname)
-
           ma=pod_groups.objects.filter(group_key=uname).select_related("group_owner")
           
           for i in ma:
                Dist_obj=i.group_owner.district
-               if pod_groups.objects.filter(group_key =uname).exists():
-                    if pod_groups.objects.filter(group_key=uname).exists() and  Dist_obj==hello:
+               print(Dist_obj)
+               
+               if pod_groups.objects.filter(group_key=uname).exists():
+                    print("yeshere", hello)
+                    if pod_groups.objects.filter(group_key=uname).exists() and  Dist_obj.upper()==hello.upper():
                          print("key")
                          key1=pod_groups.objects.filter(group_key=uname)
                          for i in key1:
@@ -107,9 +111,7 @@ def validate(request):
                          a=len(pod_groups_members.objects.filter(group_id=z))
                          print("length of pod member: ",a)
                          if a >= 2:
-                             
                              messages.error(request,"Sorry, this Pod is full!",extra_tags="don") 
-                             
                          else:
                               join.save()
                               return redirect('vote:key2', id = i.id)
