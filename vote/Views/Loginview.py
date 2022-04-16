@@ -18,8 +18,6 @@ def index(request):
   """
   return render(request,"app/index.html")  
 
-
-
 def user_login(request):
   """
   this is the login function. it asks for a POST request 
