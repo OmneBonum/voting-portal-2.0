@@ -15,7 +15,6 @@ from django.db.models import Count
 from django.contrib.auth.decorators import login_required
 
 
-
 def index(request):
 	context = {'pod':pod_groups.objects.all()}
 	return render(request,"key/key.html",context )  
@@ -46,7 +45,6 @@ def key_generator(request):
         for i in d:
             print("district: ",i.district)
  
-
         key.save()      
         member.member_status = 1
         #approval=member.approval_states

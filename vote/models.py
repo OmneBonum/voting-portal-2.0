@@ -43,6 +43,14 @@ class pod_groups(models.Model):
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
 
+  # get the mumber of the pod
+  def Members(self):
+    """
+    this function is a sub function of Pod Group and return all the members of that group.
+    """
+    members = self.pod_groups_members_set.all()
+    print(members)
+    return members
 
 class pod_groups_members(models.Model):
   group=models.ForeignKey(pod_groups,on_delete=models.CASCADE,null=True)

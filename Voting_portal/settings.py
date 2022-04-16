@@ -38,7 +38,7 @@ MESSAGE_TAGS = {
         messages.ERROR: 'alert-danger',
  }
 
-ALLOWED_HOSTS = ['127.0.0.1', 'dsup.herokuapp.com', '192.168.1.180']
+ALLOWED_HOSTS = ['127.0.0.1', 'dsup.herokuapp.com', '192.168.1.180', '192.168.0.110']
 
 INSTALLED_APPS = [
     'django.contrib.admin',

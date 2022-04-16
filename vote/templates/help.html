@@ -1,20 +1,26 @@
+{%extends 'app/base.html' %}
+{% load static %}
 
-{% if q == 0 %}
-{%include "app/header.html" %}
-<title>Help</title>
-{%endif%} 
-  <body>
-  
+
+{%block css%}
+
+{%endblock css%}
+
+{%block content%}
+{%include 'app/nav.html' %}
 
 <div class="container Enter_the_Floor">
-
   <p class="help_section">No Help Yet!</p>
-   
-  {%include "app/footer.html" %}
 </div>
 
-</body>
-</html>
+
+{%include 'app/footer.html' %}
+{%endblock content%}
+
+{%block js%}
+
+
+{%endblock js%}
 
 
   
