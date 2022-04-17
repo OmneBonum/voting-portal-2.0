@@ -9,8 +9,10 @@ from django.urls import reverse
 from django.shortcuts import get_object_or_404
 import random  
 import string
+from django.contrib.auth.decorators import login_required
 
-     
+
+@login_required(login_url = '/login')
 def fpodshow(request):  
      key2=firstdel_groups_members.objects.filter(member_id=request.user.id)
      print(key2)

@@ -21,16 +21,16 @@ from datetime import datetime, timedelta
 from django.contrib.auth.decorators import login_required
 
 
-
-def index(request):   
-    context = {'user_list':user.objects.all()}
-    return render(request,"pod/p.html",context) 
-
 def entry_code_test(request):
     return render(request, 'intro.html')
 
 
 def entry_code_generator():
+    """
+    this is the entry code generator. 
+    It uses random and checks for the database. 
+    return the code if it's not taken
+    """
     import random
     code  = str(random.choice('abcdefghijklmnpqrstuvwxyz'))
     code += str(random.randint(1,9))
@@ -38,20 +38,19 @@ def entry_code_generator():
     code += str(random.randint(1,9))
     code += str(random.choice('abcdefghijklmnpqrstuvwxyz'))
     code = code.upper()
-
-    # print("code: ", code)
-    # check that if not taken. 
     users = get_user_model()
     is_exist = users.objects.filter(entry_code = code).exists()
     
-    print("exist: ", is_exist)
     if is_exist:
-        # print("calling the entry_code_generator again")
         entry_code_generator()
 
     return code
 
 def create(request):
+    """
+    creates the user. 
+    it generate the entry code then sends activation email. 
+    """
     if request.method == 'POST':
         accountform = AddCreateForm(request.POST)
         if accountform.is_valid():
@@ -60,10 +59,7 @@ def create(request):
             new_user.is_active = False
             new_user.entry_code = entry_code_generator()
             new_user.save()
-
-            new_user.set_password(
-                accountform.cleaned_data.get('password')         
-            )
+            new_user.set_password(accountform.cleaned_data.get('password'))
             current_site = get_current_site(request)
             mail_subject = 'Activate your account.'
             message = render_to_string('signup/acc_active_email.html', {
@@ -78,43 +74,30 @@ def create(request):
                         message, 
                         to=[to_email]
             )
-           
-            a=accountform.save()
-            print(a.id)
             email.send()
-            a=user.objects.filter(created_at__lte=datetime.now()-timedelta(minutes=10),registered=1).exists()
-          
             messages.success(request,"We've sent an email to the address you provided. Open it and click on the link to confirm and Enter the Floor.",extra_tags='success')
             return render(request, 'signup/signUpConfirm.html')
-
         else:
             return render(request,"signup/create.html",{'form':accountform})
-
     form = AddCreateForm()
     return render(request,"signup/create.html",{'form':form})
 
 
 def activate(request, uidb64, token):
+    
     User=get_user_model()
     try:
         uid = force_str(urlsafe_base64_decode(uidb64))
         users = User.objects.get(id=uid)
-        print("hritik")
-        print("user",users)
     except(TypeError, ValueError, OverflowError, User.DoesNotExist):
         users = None
-        print("hritik")
-        print("user",users)
     if users is not None and account_activation_token.check_token(users, token):
         users.is_active = user.objects.filter(id=uid).update(is_active=True)
         login(request, users)
-       
         # messages.success(request,"Successfully Registered")
         return render(request, 'intro.html', {'entry_code':users.get_entry_code()})
-        
     else:
         return HttpResponse('Activation link is invalid!')
-
 
 
 @login_required(login_url = '/login')
@@ -122,7 +105,6 @@ def update(request,id):
     users = user.objects.get(id=id)
     # print(users)
     if request.method=="POST":
-
         users.district = request.POST.get('district')
         users.voterid = request.POST.get('voterid')
         users.name = request.POST.get('name')

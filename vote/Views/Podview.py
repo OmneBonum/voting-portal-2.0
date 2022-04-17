@@ -16,31 +16,24 @@ from django.contrib.auth.decorators import login_required
 @login_required(login_url = '/login')
 def podshow(request):  
     
-     all=pod_groups.objects.all()
+     podGroups=pod_groups.objects.all()
      al=firstdel_groups.objects.all()
      pod_key=pod_groups.objects.filter(group_owner_id=request.user.id)
      f_key=firstdel_groups.objects.filter(group_owner_id=request.user.id)
      s_key=seconddel_groups.objects.filter(group_owner_id=request.user.id)
      pkey=pod_key.values_list("group_key",flat=True).first()
-     print("pod",pkey)
      bkey=f_key.values_list("group_key",flat=True).first()
-     print("bkey",bkey)
      skey=s_key.values_list("group_key",flat=True).first()
-     print(skey)
      values_obj=pod_groups.objects.count()
      user_obj=(values_obj)
-     print("userobj: ",user_obj)
      key1=pod_groups_members.objects.filter(member_id=request.user.id)
      
      fpods=pod_groups.objects.filter(group_owner_id=request.user.id)
      k=fpods.values_list('group_owner_id',flat=True)
      obj=user.objects.filter(id=request.user.id).values_list("district",flat=True)
      dist=obj[0]
-     print("user district: ",dist)
-     print("first pod: ",k)
      if not request.user.is_authenticated:
           return redirect("/")
-
 
      if pod_groups.objects.filter(group_owner_id=request.user).exists():
         owner_id=k[0]
@@ -48,21 +41,17 @@ def podshow(request):
         owner_id=0
 
      if key1:
-          print(key1) 
           for i in key1:
                z=i.group_id
      
-          
           current_user =request.user.id
           a = pod_groups_members.objects.filter(member_id=current_user).exists()
-          # if request.user.is_authenticated:
-          #      return redirect("sshow")
-          return render(request,'pod/home.html',{'key1':z,'a':a,'fpod':owner_id,"fkey":0,'bkey':bkey,'pod':all,'al':al,'pkey':pkey,"value":user_obj,"obj":dist})
+          return render(request,'pod/home.html',{'key1':z,'a':a,'fpod':owner_id,"fkey":0,'bkey':bkey,'pod':podGroups,'al':al,'pkey':pkey,"value":user_obj,"obj":dist})
      
      else:      
           current_user =request.user.id
           a = pod_groups_members.objects.filter(member_id=current_user).exists()
-     return render(request,'pod/home.html',{'a':a,'fpods':fpods,'pkey':bkey,'pod':all,al:'al',"obj":dist})
+     return render(request,'pod/home.html',{'a':a,'fpods':fpods,'pkey':bkey,'pod':podGroups,al:'al',"obj":dist})
 
 
 @login_required(login_url = '/login')

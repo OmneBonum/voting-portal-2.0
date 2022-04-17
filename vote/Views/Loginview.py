@@ -10,7 +10,6 @@ from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 
 
-
 def index(request): 
   """
   This is the index (home) page of the DSU. 
@@ -71,38 +70,3 @@ def help(request):
   this the help section and it validate the delegate members 
   """
   return render(request,'help.html', {"title": 'Help'})   
-
-
-# def fhelp(request):   
-#   if firstdel_groups_members.objects.filter(member_id=request.user.id):
-#     context = {"w":0}
-#     print("hritikasddsad")
-#     template = loader.get_template('fhelp.html')
-#     return HttpResponse(template.render(context, request))   
-
-# def shelp(request):
-#     context = {}
-
-#     template = loader.get_template('shelp.html')
-#     return HttpResponse(template.render(context, request))     
-
-# def thelp(request):
-#     context = {}
-#     template = loader.get_template('thelp.html')
-#     return HttpResponse(template.render(context, request))         
-
-# def fohelp(request):
-#     context = {}
-#     template = loader.get_template('fohelp.html')
-#     return HttpResponse(template.render(context, request))  
-
-
-# def fihelp(request):
-#     context = {}
-#     template = loader.get_template('fihelp.html')
-#     return HttpResponse(template.render(context, request))    
-
-# def sihelp(request):
-    # context = {}
-    # template = loader.get_template('sihelp.html')
-    # return HttpResponse(template.render(context, request))               

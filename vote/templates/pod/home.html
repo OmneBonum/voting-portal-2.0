@@ -32,11 +32,10 @@ tbody{
     <div class="row mb-3 ">
         <div class="col-sm-12 col-md-4 col-lg-4 d-flex justify-content-center"> 
             <ul class="a">
-                <h1>{{item.group_owner.id}}</h1>
                 <li><a href="#">List of Delegates</a></li>
-                <li><a href="/home">Back-and-Forth</a></li>
-                <li><a href="/member">Member Contact Page</a></li>
-                <li><a href="pod/{{key1}}">Pod Housekeeping Page</a></li>
+                <li><a href="{%url 'vote:chatHome' %}">Back-and-Forth</a></li>
+                <li><a href="{%url 'vote:member_index'%}">Member Contact Page</a></li>
+                <li><a href="{%url 'vote:key2' key1 %}">Pod Housekeeping Page {{key1}}</a></li>
             </ul>
         </div>
         {% if fpod == request.user.id and value > 0 %}

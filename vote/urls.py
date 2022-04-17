@@ -26,57 +26,49 @@ from vote.Views import sixthchatview
 
 
 app_name = "vote"
-
-
 urlpatterns = [
     path('', Loginview.index, name='html'),
     path("login",Loginview.user_login,name='login'),
     path('logout',Loginview.userLogout,name='logout'),
     path("help",Loginview.help,name='help'),
     path('activate/<uidb64>/<token>/',Signupview.activate, name='activate'),
-    # path("fhelp",Loginview.fhelp,name='fhelp'),
-    # path("shelp",Loginview.shelp,name='shelp'),
-    # path("thelp",Loginview.thelp,name='thelp'),
-    # path("fohelp",Loginview.fohelp,name='fohelp'),
-    # path("fihelp",Loginview.fihelp,name='fihelp'),
-    # path("sihelp",Loginview.sihelp,name='sihelp'),
     path('member',memberview.memberIndex,name="member_index"),
 
-    path('entry-code', Signupview.entry_code_test),
+    path('entry-code', Signupview.entry_code_test, name="entry_code"),
     
     # signup urls  
-    path("create",Signupview.create,name='signupcreate'),
-    path("update/<int:id>",Signupview.update,name='signupupdate'),
+    path("create",Signupview.create,name='signUpCreate'),
+    path("update/<int:id>",Signupview.update,name='signUpUpdate'),
 
 # POD urls  
-    path("show",Podview.podshow,name='show'), 
-    path('join',Podview.validate,name="join"),
+    path("show",Podview.podshow,name='podShow'), 
+    path('join',Podview.validate,name="podJoin"),
     
 #fpod urls
-    path('fjoin',firstpodview.fvalidate,name="fjoin"),
-    path("fshow",firstpodview.fpodshow,name='fshow'), 
+    path('fjoin',firstpodview.fvalidate,name="firstPodJoin"),
+    path("fshow",firstpodview.fpodshow,name='firstPodShow'), 
 
 #spod urls
-    path('sjoin',secondpodview.svalidate,name="sjoin"),
-    path("sshow",secondpodview.spodshow,name='sshow'), 
+    path('sjoin',secondpodview.svalidate,name="secondPodJoin"),
+    path("sshow",secondpodview.spodshow,name='secondPodShow'), 
 
 #tpod urls
-    path('tjoin',thirdpodview.tvalidate,name="tjoin"),
-    path("tshow",thirdpodview.tpodshow,name='tshow'), 
+    path('tjoin',thirdpodview.tvalidate,name="thirdPodJoin"),
+    path("tshow",thirdpodview.tpodshow,name='thirdPodShow'), 
 
 #fourth pod  urls
-    path('fojoin',fourthpodview.fourthvalidate,name="fojoin"),
-    path("foshow",fourthpodview.fourthpodshow,name='foshow'), 
+    path('fojoin',fourthpodview.fourthvalidate,name="fourthPodJoin"),
+    path("foshow",fourthpodview.fourthpodshow,name='fourthPodShow'), 
      
 
 #fifthpod urls
-    path('fijoin',fifthdelpodview.fifthvalidate,name="fijoin"),
-    path("fishow",fifthdelpodview.fifthpodshow,name='fishow'), 
+    path('fijoin',fifthdelpodview.fifthvalidate,name="fifthPodJoin"),
+    path("fishow",fifthdelpodview.fifthpodshow,name='fifthPodShow'), 
 
 
 #sixthpod urls
-    path("sishow",sixthdelpodview.sixthpodshow,name='sishow'), 
-    path('sijoin',sixthdelpodview.sixthvalidate,name="sijoin"),
+    path("sishow",sixthdelpodview.sixthpodshow,name='sixthPodShow'), 
+    path('sijoin',sixthdelpodview.sixthvalidate,name="sixthPodJoin"),
     
 
 #key urls
@@ -85,8 +77,8 @@ urlpatterns = [
     # path("show<int:id>",Keyview.keyshow,name='show2'),
 
 #fdelkey urls 
-    path("fpod",firstdkeyview.fkey_generator,name="fkey"),
-    path('fpod/<int:id>', firstdkeyview.fshow, name="fkey2"), 
+    path("fpod",firstdkeyview.fkey_generator,name="firstKey"),
+    path('fpod/<int:id>', firstdkeyview.fshow, name="firstPodShow"), 
 
 #sdelkey urls 
     path("spod",seconddkeyview.skey_generator,name="skey"),
@@ -111,7 +103,7 @@ urlpatterns = [
     path('sipod/<int:id>', sixthdelkeyview.sixthshow, name="sikey2"),     
 
 #room
-    # path('home', chatview.home, name='home'),
+    path('home', chatview.home, name='chatHome'),
     # path('<str:room>/', chatview.room, name='room'),
     # path('checkview', chatview.checkview, name='checkview'),
     # path('send', chatview.send, name='send'),
