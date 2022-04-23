@@ -110,7 +110,7 @@ def validate(request):
                          join.member_status=0
                          a=len(pod_groups_members.objects.filter(group_id=z))
                          print("length of pod member: ",a)
-                         if a >= 2:
+                         if a >= 12:
                              messages.error(request,"Sorry, this Pod is full!",extra_tags="don") 
                          else:
                               join.save()
