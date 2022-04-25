@@ -35,7 +35,7 @@ tbody{
                 <li><a href="#">List of Delegates</a></li>
                 <li><a href="{%url 'vote:chatHome' %}">Back-and-Forth</a></li>
                 <li><a href="{%url 'vote:member_index'%}">Member Contact Page</a></li>
-                <li><a href="{%url 'vote:key2' key1 %}">Pod Housekeeping Page {{key1}}</a></li>
+                <li><a href="/pod/{{key1}}">Pod Housekeeping Page {{key1}}</a></li>
             </ul>
         </div>
         {% if fpod == request.user.id and value > 0 %}

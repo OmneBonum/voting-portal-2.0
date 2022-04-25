@@ -39,8 +39,8 @@
 
     <div class="btn_section text-center mb-5">
       {% if  owner_id == request.user.id%}
-        <button id="send" type="submit" name="hello"  class="btn btn-success">Update Key</button>
-        <a class="btn btn-success" href="/member">Members</a>
+        <button id="send" type="submit" name="updateKey"  class="btn btn-success">Update Key</button>
+        <a class="btn btn-success" href="{%url 'vote:member_index'%}">Members</a>
       {%elif is_key_generate == 1%}
         <button id="send_generate_key" type="submit" name="hello" class="btn btn-success">Generate Key</button> 
       {% endif  %}  
@@ -90,9 +90,8 @@
                 <button type="submit" class="btn btn-danger btn-sm delete" name="Delete" value={{users_list.id}}>Delete</button>  
               {% endif  %}
             </td>    
-  
             {%endfor%}
-  
+
           </tbody>
         </table>
       </div>
@@ -101,6 +100,19 @@
 </form>
 
 
+<!-- this is for testing -->
+{%comment%}
+<div class="container">
+  <div class="row">
+    <ul>
+      {{key1.group_owner}}
+      {%for i in key1.Members%}
+        <p>{{i.id}}- {{i.member}}= {{i.member_status}} {%if i.member == key1.group_owner %}True {%else%}false{%endif%}</p>
+      {%endfor%}
+    </ul>
+  </div>
+</div>
+{%endcomment%}
 {%endblock content%}
 
 {%block js%}

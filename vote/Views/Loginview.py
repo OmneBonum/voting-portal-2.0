@@ -9,6 +9,8 @@ from django.contrib import messages
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 
+from django.contrib.auth.hashers import check_password
+from hashlib import sha1
 
 def index(request): 
   """
@@ -26,9 +28,17 @@ def user_login(request):
     entry_code = request.POST.get('entry_code')
     upass = request.POST.get('password')
 
-    user = authenticate(username=entry_code,password=upass)
-    if user is not None:
-      login(request,user)
+    u = user.objects.get(entry_code = entry_code)
+    print("u p: ", u.password)
+    users = authenticate(username=entry_code,password=upass)
+    print("users: ", users)
+
+    matchcheck= check_password(upass, u.password)
+    print("matcher: ",matchcheck)
+
+
+    if users is not None:
+      login(request,users)
 
       pod_key=fifthdel_groups.objects.filter(group_owner_id=request.user.id)
       pkey=pod_key.values_list("group_key",flat=True).first()      

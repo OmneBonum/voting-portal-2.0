@@ -3,39 +3,38 @@ from django.contrib.auth.models import AbstractBaseUser
 from django.contrib.auth.models import PermissionsMixin
 from django.utils.translation import gettext_lazy as _
 from .manager import CustomUserManager
+from django.core.validators import validate_comma_separated_integer_list
 
 from datetime import datetime
 # Create your models here.
 class user(AbstractBaseUser,PermissionsMixin):
-  """
-  this is the user model with all it's attribute.
-  """
-  district=models.CharField(max_length=4)
-  voterid=models.IntegerField(null=True)
-  name=models.CharField(max_length=200,null=True)
-  email=models.EmailField(_('email'),unique=True,blank=True)
-  password=models.CharField(max_length=200)
-  Registration_Status=models.CharField(max_length=200)
-  upload=models.ImageField(upload_to='images/',null=True,blank=True)
-  address=models.CharField(max_length=100,null=True)
-  executed_on=models.DateField(null=True)
-  registered=models.IntegerField(default=0)
-  # eligible=models.IntegerField(default=0)
-  is_staff 	= models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.')
-  is_active = models.BooleanField(default=True,
-  help_text = 'Designates whether this user should be treated as active. Unselect this instead of deleting accounts.')
-  created_at = models.DateTimeField(auto_now_add=True,null=True)
-  updated_at =  models.DateTimeField(auto_now=True)
-  entry_code =  models.CharField(max_length=200,unique=True)
+    district=models.CharField(max_length=4)
+    voterid=models.IntegerField(null=True)
+    name=models.CharField(max_length=200,unique=True)
+    email=models.EmailField(_('email'),unique=True,blank=True)
+    password=models.CharField(max_length=200)
+    Registration_Status=models.CharField(max_length=200)
+    upload=models.ImageField(upload_to='images/',null=True,blank=True)
+    address=models.CharField(max_length=100,null=True)
+    executed_on=models.DateField(null=True)
+    registered=models.IntegerField(default=0)
+    # eligible=models.IntegerField(default=0)
+    is_staff 	= models.BooleanField(default=False, help_text='Designates whether the user can log into this admin site.')
+    is_active 	= models.BooleanField(default=True,
+		help_text='Designates whether this user should be treated as active.\
+		Unselect this instead of deleting accounts.')
+    created_at = models.DateTimeField(auto_now_add=True,null=True)
+    updated_at =  models.DateTimeField(auto_now=True)
+    entry_code=models.CharField(max_length=200,null=True)
+    
 
-  USERNAME_FIELD = 'entry_code'
-  objects = CustomUserManager()
 
-  def __str__(self):
-    return self.email
 
-  def get_entry_code(self):
-    return self.district.upper()+"-"+self.entry_code
+    USERNAME_FIELD 	='name'
+    objects = CustomUserManager()
+
+    def __str__(self):
+        return self.email
 
 class pod_groups(models.Model):
   group_key =  models.CharField(unique=True, editable=False,max_length=6)
@@ -43,12 +42,6 @@ class pod_groups(models.Model):
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
 
-  # get the mumber of the pod
-  def Members(self):
-    """
-    this function is a sub function of Pod Group and return all the members of that group.
-    """
-    return self.pod_groups_members_set.all()
 
 class pod_groups_members(models.Model):
   group=models.ForeignKey(pod_groups,on_delete=models.CASCADE,null=True)
@@ -63,7 +56,6 @@ class pod_groups_members(models.Model):
   updated_at =  models.DateTimeField(auto_now=True)
   devote_given = models.IntegerField(default=0)
 
-  
 
 # class elect_count(models.Model):
 #   Elect_count=models.IntegerField(default=1)
@@ -75,14 +67,6 @@ class firstdel_groups(models.Model):
   group_owner=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
-
-  # get the mumber of first delegrate groups
-  def Members(self):
-    """
-    this function return the members of firstDelGroups
-    """
-    return self.firstdel_groups_members_set.all()
-    
 
 class firstdel_groups_members(models.Model):
   group=models.ForeignKey(firstdel_groups,on_delete=models.CASCADE,null=True)
@@ -103,13 +87,6 @@ class seconddel_groups(models.Model):
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
 
-  # get the mumber of second delegrate groups
-  def Members(self):
-    """
-    this function return the members of Delegate group
-    """
-    return  self.seconddel_groups_members_set.all()
-
 class seconddel_groups_members(models.Model):
   group=models.ForeignKey(seconddel_groups,on_delete=models.CASCADE,null=True)
   member=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
@@ -128,14 +105,7 @@ class thirddel_groups(models.Model):
   group_owner=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
-  # get the mumber of second delegrate groups
-  def Members(self):
-    """
-    this function return the members of Delegate group
-    """
-    return  self.thirddel_groups_members_set.all()
 
-  
 class thirddel_groups_members(models.Model):
   group=models.ForeignKey(thirddel_groups,on_delete=models.CASCADE,null=True)
   member=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
@@ -154,13 +124,6 @@ class fourthdel_groups(models.Model):
   group_owner=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
-
-# get the mumber of second delegrate groups
-  def Members(self):
-    """
-    this function return the members of Delegate group
-    """
-    return self.fourthdel_groups_members_set.all()
 
 class fourthdel_groups_members(models.Model):
   group=models.ForeignKey(fourthdel_groups,on_delete=models.CASCADE,null=True)
@@ -181,14 +144,6 @@ class fifthdel_groups(models.Model):
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
 
-  # get the mumber of second delegrate groups
-  def Members(self):
-    """
-    this function return the members of Delegate group
-    """
-    return self.fifthdel_groups_members_set.all()
-
-
 class fifthdel_groups_members(models.Model):
   group=models.ForeignKey(fifthdel_groups,on_delete=models.CASCADE,null=True)
   member=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
@@ -208,14 +163,6 @@ class sixthdel_groups(models.Model):
   created_at = models.DateTimeField(auto_now_add=True,null=True)
   updated_at =  models.DateTimeField(auto_now=True)
 
-  # get the mumber of second delegrate groups
-  def Members(self):
-    """
-    this function return the members of Delegate group
-    """
-    return self.sixthdel_groups_members_set.all()
-
-
 class sixthdel_groups_members(models.Model):
   group=models.ForeignKey(sixthdel_groups,on_delete=models.CASCADE,null=True)
   member=models.ForeignKey(user,on_delete=models.CASCADE,null=True)
@@ -230,6 +177,7 @@ class sixthdel_groups_members(models.Model):
   devote_given = models.IntegerField(default=0)
 
 
+
 # Create your models here.
 class Room(models.Model):
      name = models.CharField(max_length=1000)
@@ -240,6 +188,8 @@ class Message(models.Model):
     date = models.DateTimeField(default=datetime.now, blank=True)
     user = models.CharField(max_length=100)
     room = models.CharField(max_length=100)
+
+
 
 
 class firstMessage(models.Model):

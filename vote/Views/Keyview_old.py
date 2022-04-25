@@ -20,50 +20,37 @@ def index(request):
 	return render(request,"key/key.html",context )  
          
 def key_generator(request):
-    count_obj = pod_groups_members.objects.filter(vote_count=request.user.id).count()
-    d=pod_groups.objects.filter(group_owner_id=request.user.id).exists()
     if not request.user.is_authenticated:
-      return redirect("/")
-    a= pod_groups.objects.all()
-    z=len(a)
-    podlength=len(pod_groups_members.objects.filter(member_status = 1))
-    user = pod_groups.objects.filter(group_owner_id=request.user).order_by('group_owner_id')  
+      return redirect("/login")   
+    user = pod_groups.objects.filter(group_owner_id=request.user).order_by('group_owner_id')
     if request.method=="POST":
         key=pod_groups()
         member=pod_groups_members()
         key.group_key=''.join(random.choices(string.digits, k=6))
-        current_user=request.user          
-        key.group_owner=current_user
-        d=pod_groups.objects.filter(group_owner_id=request.user.id).select_related("group_owner")
-        for i in d:
-            print("sdfsd",i.district)
-
+        key.group_owner=request.user   
         key.save()      
         member.member_status = 1
-        #approval=member.approval_states
         member.group_id=key.id
-        member.member_id=current_user.id
+        member.member_id=request.user.id
         member.save()   
         return HttpResponseRedirect(reverse("vote:key2",args=[key.id])) 
     if pod_groups_members.objects.filter(member_id=request.user.id).exists():
-
         return redirect("/show")
-           
-    return render(request,"key/key.html",{'users':user,'is_key_generate':1,'a':0,"z":z})
+    return render(request,"key/key.html",{'user':user,'is_key_generate':1,"z":pod_groups.objects.all().count()})
+
 
 
 @login_required(login_url = '/login')
 def show(request,id):
     elect_obj=pod_groups_members.objects.filter(member_id=request.user.id).values_list("elect_count",flat=True)[0]
     count_obj = pod_groups_members.objects.filter(member_id=request.user.id).values_list("vote_count",flat=True)[0]
-    
     currnt = pod_groups_members.objects.filter(member_id = request.user.id)
     hello = currnt.values_list("vote_given",flat=True)
     if pod_groups_members.objects.filter(member_id = request.user.id).exists():
         hell=hello[0]
     else:
         hell=0
-
+    
     hello = currnt.values_list("elect_vote_given",flat=True)
     if pod_groups_members.objects.filter(member_id = request.user.id).exists():
         evote=hello[0]
@@ -82,13 +69,16 @@ def show(request,id):
     obj=user.objects.filter(id=request.user.id).values_list("district",flat=True)
     dist=obj[0]
     users = pod_groups.objects.filter(id=key1.id) 
+    if not request.user.is_authenticated:
+      return redirect("/login")
 
     usert = pod_groups.objects.filter(group_owner_id=request.user)
     k=usert.values_list('group_owner_id',flat=True)
     if pod_groups.objects.filter(group_owner_id=request.user).exists():
         owner_id=k[0]
     else:
-        owner_id=0       
+        owner_id=0      
+
     approval_obj = pod_groups_members.objects.filter(group_id=key1)
     podlength=len(pod_groups_members.objects.filter(group_id=key1,member_status = 1))
     array=[]
@@ -96,13 +86,10 @@ def show(request,id):
     for i in z:
         if i.member_status == 1:
             array.append(i)
-
         elif i.member_status == 0 and i.member_id == request.user.id and i.group_id == key1.id:
             break
-
         elif pod_groups_members.objects.filter(member_status=0,member_id=request.user.id,group_id = key1.id):
             break
-
         elif i.member_status == 0:
             array.append(i)
             break
@@ -110,7 +97,7 @@ def show(request,id):
     
     if request.method=="POST" and "submit" in request.POST:
         if pod_groups_members.objects.filter(member_status=0,group_id=key1):
-             pod_groups_members.objects.update(vote_given=0)
+            pod_groups_members.objects.update(vote_given=0)
         member=pod_groups_members() 
         q = request.POST.get('submit')
         voteCount=F('vote_count')+1   
@@ -121,11 +108,8 @@ def show(request,id):
         podlen=len(pod_groups_members.objects.filter(group_id=key1,member_status = 1))
         podLen=podlen/2
         length=podLen
-        for i in show:
-            print("Elect",i.vote_count)
         if i.vote_count > length:
             pod_groups_members.objects.filter(member_status =1,group_id=key1)
-            # print("true")
             pod_groups_members.objects.update(vote_given=0)
             member.pod_owner_id_id=pod_groups_members.objects.filter(id=q).update(member_status=1)   
         return redirect(request.path_info)
@@ -143,24 +127,22 @@ def show(request,id):
         podlen=len(pod_groups_members.objects.filter(group_id=key1,member_status = 1))
         podLen=podlen/2
         length=podLen
-        for i in show:
-            print("Elect",i.vote_count)
-  
+            
         return redirect(request.path_info)   
     
     if request.method=="POST" and "Delete" in request.POST:
         member=pod_groups_members()
         q = request.POST.get('Delete')
         member.count=pod_groups_members.objects.filter(id=q).delete()
-        pod_groups_members.objects.filter(member_status =1).update(devote_given=0)
-        pod_groups_members.objects.filter(member_status =1).update(vote_given=0)
+        pod_groups_members.objects.filter(member_status = 1).update(devote_given=0)
+        pod_groups_members.objects.filter(member_status = 1).update(vote_given=0)
         return redirect(request.path_info) 
 
-    if request.method == "POST" and "hello" in request.POST:
+    if request.method == "POST" and "updateKey" in request.POST:
         z =''.join(random.choices(string.digits, k=6))
         pod_groups.objects.filter(group_owner_id=request.user.id).update(group_key=z)
         return redirect(request.path_info) 
-              
+
     if request.method=="POST" and "elect" in request.POST:
         member=pod_groups_members()
         mem=pod_groups()
@@ -171,12 +153,13 @@ def show(request,id):
         podlen=len(pod_groups_members.objects.filter(group_id=key1,member_status = 1))
         podLen=podlen/2
         length=podLen
-        show=pod_groups_members.objects.filter(id=q)
-        for i in show:
-            print("Elect",i.elect_count,i.group.group_owner_id)
         if i.elect_count > length:
             mem.group_owner_id=pod_groups.objects.filter(group_owner=i.group.group_owner_id).update(group_owner=i.member.id)     
         return redirect(request.path_info)   
-    return render(request,"key/key.html",{'users':users,'key1':key1,'stat':status,'is_key_generate':0,'podlen':podlength,"owner_id":owner_id,'all':all,'votegive':hell,"evote":evote,'q':0,"devote":devotee,'count_obj':count_obj,"elect_obj":elect_obj,"obj":dist}) 
+    
+    return render(request,"key/key.html",
+        {'users':users,'key1':key1,'stat':status,'is_key_generate':0,'podlen':podlength,
+            "owner_id":owner_id,'all':all,'votegive':hell,"evote":evote,'q':0,"devote":devotee,
+            'count_obj':count_obj,"elect_obj":elect_obj,"obj":dist}) 
  
     

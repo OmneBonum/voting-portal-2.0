@@ -50,8 +50,8 @@ INSTALLED_APPS = [
     'vote.apps.VoteConfig',
     'votePortal.apps.VoteportalConfig',
     'rest_framework'
-    
 ]
+
 AUTH_USER_MODEL = 'vote.user'
 
 MIDDLEWARE = [
@@ -97,19 +97,26 @@ if json.loads(os.environ.get('PRODUCTION').lower()):
             'USER': os.environ.get('DB_USER'),
             'PASSWORD': os.environ.get('DB_PASSWORD'),
             'HOST': os.environ.get('DB_HOST'),
-            'PORT': os.environ.get('DB_PORT')
+            'PORT': os.environ.get('DB_PORT'),
+            'OPTIONS': {
+            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',    
+            }
         }
     }
 else:
     # localhost
+    
     DATABASES = {
     'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME':  'DSU',
+            'NAME':  'dsu_test',
             'USER': 'root',
             'PASSWORD': 'Z123123z',
             'HOST': 'localhost',
-            'PORT': '3306'
+            'PORT': '3306',
+            'OPTIONS': {
+            'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',    
+            }
         }
     }
     
@@ -168,5 +175,7 @@ EMAIL_PORT          = os.environ.get('EMAIL_PORT')
 EMAIL_USE_TLS       = True
 
 
+
 # this is the heroku postgresql DB credential. 
 # postgres://quktxbqzgdwuqa:04419a13767ca9df93cb3b127e7f674e72c99cd7ccfb8170bc4151de2500555b@ec2-52-73-155-171.compute-1.amazonaws.com:5432/d2rvlcciciqf6h
+

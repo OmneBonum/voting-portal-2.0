@@ -60,6 +60,8 @@ def create(request):
             new_user.entry_code = entry_code_generator()
             new_user.save()
             new_user.set_password(accountform.cleaned_data.get('password'))
+            # so save the hashed password 
+            new_user.save()
             current_site = get_current_site(request)
             mail_subject = 'Activate your account.'
             message = render_to_string('signup/acc_active_email.html', {
