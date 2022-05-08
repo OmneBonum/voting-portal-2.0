@@ -1,7 +1,7 @@
 from vote.models import *
 from vote.Views.Signupview import entry_code_generator
 
-def test():
+def insert():
   name = input("enter name: ")
   district = input("enter district: ")
   email = input("enter email: ")
